@@ -72,28 +72,29 @@ body {
   padding: 48px;
 }
 
-/* line 13, ../sass/screen.scss */
-#wrapper {
-  width: 480px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-/* line 19, ../sass/screen.scss */
+/* line 16, ../sass/screen.scss */
 h1 {
   font-size: 48px;
   font-weight: bold;
   letter-spacing: -3px;
   color: #619615;
   text-shadow: rgba(255, 255, 255, 0.4) 0 1px, rgba(0, 0, 0, 0.4) 0 -1px, rgba(255, 255, 255, 0.5) 0 0 15px;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  text-align: center;
 }
 
-/* line 29, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 section {
-  margin: 2em 0;
+  width: 33%;
+  display: inline;
+  float: left;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 1em;
 }
-/* line 32, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
 section h1 {
   font-size: 36px;
   font-weight: bold;
@@ -101,20 +102,20 @@ section h1 {
   text-shadow: rgba(0, 0, 0, 0.3) 0 1px, rgba(255, 255, 255, 0.8) 0 0 10px;
   margin-bottom: 0;
 }
-/* line 39, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 section h1:before, section h1:after {
   color: #c5eb8f;
 }
-/* line 43, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 section h1:before {
   content: "‹ ";
 }
-/* line 47, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 section h1:after {
   content: " ›";
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 table {
   width: 100%;
   margin-top: 1em;
@@ -131,22 +132,22 @@ table {
   box-shadow: rgba(0, 0, 0, 0.3) 0 1px;
   color: #619615;
 }
-/* line 61, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 table td, table th {
   padding: 1em;
   border-bottom: 1px dotted #c5eb8f;
 }
-/* line 67, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 table tr:last-child td, table tr:last-child th {
   border-bottom: 0;
 }
-/* line 72, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 table .support {
   width: 64px;
   text-align: center;
   color: #FFF;
 }
-/* line 77, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 table .support:after {
   padding: 4px 8px;
   content: "Nope";
@@ -159,7 +160,7 @@ table .support:after {
   border-radius: 6px;
 }
 
-/* line 92, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 html.fontface .feature.fontface .support:after, html.backgroundsize .feature.backgroundsize .support:after, html.borderimage .feature.borderimage .support:after, html.borderradius .feature.borderradius .support:after, html.boxshadow .feature.boxshadow .support:after, html.flexbox .feature.flexbox .support:after, html.hsla .feature.hsla .support:after, html.multiplebgs .feature.multiplebgs .support:after, html.opacity .feature.opacity .support:after, html.rgba .feature.rgba .support:after, html.textshadow .feature.textshadow .support:after, html.cssanimations .feature.cssanimations .support:after, html.csscolumns .feature.csscolumns .support:after, html.cssgradients .feature.cssgradients .support:after, html.cssreflections .feature.cssreflections .support:after, html.csstransforms .feature.csstransforms .support:after, html.csstransforms3d .feature.csstransforms3d .support:after, html.csstransitions .feature.csstransitions .support:after, html.applicationcache .feature.applicationcache .support:after, html.canvas .feature.canvas .support:after, html.canvastext .feature.canvastext .support:after, html.draganddrop .feature.draganddrop .support:after, html.hashchange .feature.hashchange .support:after, html.history .feature.history .support:after, html.audio .feature.audio .support:after, html.video .feature.video .support:after, html.indexeddb .feature.indexeddb .support:after, html.localstorage .feature.localstorage .support:after, html.postmessage .feature.postmessage .support:after, html.sessionstorage .feature.sessionstorage .support:after, html.websockets .feature.websockets .support:after, html.websqldatabase .feature.websqldatabase .support:after, html.webworkers .feature.webworkers .support:after, html.geolocation .feature.geolocation .support:after, html.inlinesvg .feature.inlinesvg .support:after, html.smil .feature.smil .support:after, html.svg .feature.svg .support:after, html.svgclippaths .feature.svgclippaths .support:after, html.touch .feature.touch .support:after, html.webgl .feature.webgl .support:after {
   content: "Yep!";
   background-color: #090;
