@@ -1,0 +1,95 @@
+@import "compass/reset";
+@import "compass";
+
+$green: #8bd71f;
+
+body {
+    background-color: $green;
+    color: #FFF;
+    font-family: "Droid Sans", sans-serif;
+    padding: 48px;
+}
+
+#wrapper {
+    width: 480px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: -3px;
+    color: mix($green, #000, 70%);
+    @include text-shadow(rgba(255,255,255,0.4) 0 1px, rgba(0,0,0,0.4) 0 -1px, rgba(255,255,255,0.5) 0 0 15px);
+    margin-bottom: 2em;
+}
+
+
+section {
+    margin: 2em 0;
+    
+    h1 {
+        font-size: 36px;
+        font-weight: bold;
+        color: #FFF;
+        @include text-shadow(rgba(0,0,0,0.3) 0 1px, rgba(255,255,255,0.8) 0 0 10px);
+        margin-bottom: 0;
+        
+        &:before, &:after {
+            color: mix(#FFF, $green);
+        }
+        
+        &:before {
+            content: "‹ ";
+        }
+        
+        &:after {
+            content: " ›";
+        }
+    }
+}
+
+table {
+    width: 100%;
+    margin-top: 1em;
+    background: #FFF;
+    @include border-radius(8px);
+    @include box-shadow(rgba(0,0,0,0.3) 0 1px);
+    color: mix($green, #000, 70%);
+    
+    td, th {
+        padding: 1em;
+        border-bottom: 1px dotted mix($green, #FFF);
+    }
+    
+    tr:last-child {
+        td, th {
+            border-bottom: 0;
+        }
+    }
+    
+    .support {
+        width: 64px;
+        text-align: center;
+        color: #FFF;
+        
+        &:after {
+            padding: 4px 8px;
+            content: "Nope";
+            background-color: #900;
+            @include border-radius(6px);
+        }
+    }
+}
+
+
+$selector: "";
+@each $feature in fontface, backgroundsize, borderimage, borderradius, boxshadow, flexbox, hsla, multiplebgs, opacity, rgba, textshadow, cssanimations, csscolumns, cssgradients, cssreflections, csstransforms, csstransforms3d, csstransitions, applicationcache, canvas, canvastext, draganddrop, hashchange, history, audio, video, indexeddb, localstorage, postmessage, sessionstorage, websockets, websqldatabase, webworkers, geolocation, inlinesvg, smil, svg, svgclippaths, touch, webgl {
+    $selector: "#{$selector} html.#{$feature} .feature.#{$feature} .support:after,";
+}
+
+#{$selector} {
+    content: "Yep!";
+    background-color: #090;
+}

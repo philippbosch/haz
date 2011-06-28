@@ -1,0 +1,179 @@
+{
+    "sections": [
+        {
+            "title": "CSS3",
+            "features": [
+                {
+                    "name": "fontface",
+                    "title": "@font-face"
+                },
+                {
+                    "name": "backgroundsize",
+                    "title": "background-size"
+                },
+                {
+                    "name": "borderimage",
+                    "title": "border-image"
+                },
+                {
+                    "name": "borderradius",
+                    "title": "border-radius"
+                },
+                {
+                    "name": "boxshadow",
+                    "title": "box-shadow"
+                },
+                {
+                    "name": "flexbox",
+                    "title": "Flexible Box Model"
+                },
+                {
+                    "name": "hsla",
+                    "title": "hsla()"
+                },
+                {
+                    "name": "multiplebgs",
+                    "title": "Multiple backgrounds"
+                },
+                {
+                    "name": "opacity",
+                    "title": "opacity"
+                },
+                {
+                    "name": "rgba",
+                    "title": "rgba()"
+                },
+                {
+                    "name": "textshadow",
+                    "title": "text-shadow"
+                },
+                {
+                    "name": "cssanimations",
+                    "title": "CSS Animations"
+                },
+                {
+                    "name": "csscolumns",
+                    "title": "CSS Columns"
+                },
+                {
+                    "name": "cssgradients",
+                    "title": "CSS Gradients"
+                },
+                {
+                    "name": "cssreflections",
+                    "title": "CSS Reflections"
+                },
+                {
+                    "name": "csstransforms",
+                    "title": "CSS 2D Transforms"
+                },
+                {
+                    "name": "csstransforms3d",
+                    "title": "CSS 3D Transforms"
+                },
+                {
+                    "name": "csstransitions",
+                    "title": "CSS Transitions"
+                }
+            ]
+        },
+        {
+            "title": "HTML5",
+            "features": [
+                {
+                    "name": "applicationcache",
+                    "title": "applicationCache"
+                },
+                {
+                    "name": "canvas",
+                    "title": "Canvas"
+                },
+                {
+                    "name": "canvastext",
+                    "title": "Canvas Text"
+                },
+                {
+                    "name": "draganddrop",
+                    "title": "Drag and Drop"
+                },
+                {
+                    "name": "hashchange",
+                    "title": "hashchange Event"
+                },
+                {
+                    "name": "history",
+                    "title": "History Management"
+                },
+                {
+                    "name": "audio",
+                    "title": "HTML5 Audio"
+                },
+                {
+                    "name": "video",
+                    "title": "HTML5 Video"
+                },
+                {
+                    "name": "indexeddb",
+                    "title": "IndexedDB"
+                },
+                {
+                    "name": "localstorage",
+                    "title": "localStorage"
+                },
+                {
+                    "name": "postmessage",
+                    "title": "Cross-window Messging"
+                },
+                {
+                    "name": "sessionstorage",
+                    "title": "sessionStorage"
+                },
+                {
+                    "name": "websockets",
+                    "title": "Web Sockets"
+                },
+                {
+                    "name": "websqldatabase",
+                    "title": "Web SQL Database"
+                },
+                {
+                    "name": "webworkers",
+                    "title": "Web Workers"
+                }
+            ]
+        },
+        {
+            "title": "Miscellaneous",
+            "features": [
+                {
+                    "name": "geolocation",
+                    "title": "Geolocation API"
+                },
+                {
+                    "name": "inlinesvg",
+                    "title": "Inline SVG"
+                },
+                {
+                    "name": "smil",
+                    "title": "SMIL"
+                },
+                {
+                    "name": "svg",
+                    "title": "SVG"
+                },
+                {
+                    "name": "svgclippaths",
+                    "title": "SVG Clip paths"
+                },
+                {
+                    "name": "touch",
+                    "title": "Touch Events"
+                },
+                {
+                    "name": "webgl",
+                    "title": "WebGL"
+                }
+            ]
+        }
+    ]
+}
