@@ -72,7 +72,13 @@ body {
   padding: 48px;
 }
 
-/* line 16, ../sass/screen.scss */
+/* line 13, ../sass/screen.scss */
+#wrapper {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 17, ../sass/screen.scss */
 h1 {
   font-size: 48px;
   font-weight: bold;
@@ -83,7 +89,7 @@ h1 {
   text-align: center;
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 section {
   width: 33%;
   display: inline;
@@ -93,8 +99,9 @@ section {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 1em;
+  margin-bottom: 1em;
 }
-/* line 33, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 section h1 {
   font-size: 36px;
   font-weight: bold;
@@ -102,20 +109,20 @@ section h1 {
   text-shadow: rgba(0, 0, 0, 0.3) 0 1px, rgba(255, 255, 255, 0.8) 0 0 10px;
   margin-bottom: 0;
 }
-/* line 40, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 section h1:before, section h1:after {
   color: #c5eb8f;
 }
-/* line 44, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 section h1:before {
   content: "‹ ";
 }
-/* line 48, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 section h1:after {
   content: " ›";
 }
 
-/* line 54, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 table {
   width: 100%;
   margin-top: 1em;
@@ -126,42 +133,47 @@ table {
   -ms-border-radius: 8px;
   -khtml-border-radius: 8px;
   border-radius: 8px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px;
-  -o-box-shadow: rgba(0, 0, 0, 0.3) 0 1px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0 1px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px;
+  -o-box-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px;
   color: #619615;
 }
-/* line 62, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 table td, table th {
   padding: 1em;
   border-bottom: 1px dotted #c5eb8f;
 }
-/* line 68, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 table tr:last-child td, table tr:last-child th {
   border-bottom: 0;
 }
-/* line 73, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 table .support {
   width: 64px;
-  text-align: center;
+  text-align: right;
   color: #FFF;
 }
-/* line 78, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 table .support:after {
   padding: 4px 8px;
   content: "Nope";
-  background-color: #900;
+  background-color: #C00;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
   -ms-border-radius: 6px;
   -khtml-border-radius: 6px;
   border-radius: 6px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px inset;
+  text-shadow: rgba(0, 0, 0, 0.3) 0 1px;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 html.fontface .feature.fontface .support:after, html.backgroundsize .feature.backgroundsize .support:after, html.borderimage .feature.borderimage .support:after, html.borderradius .feature.borderradius .support:after, html.boxshadow .feature.boxshadow .support:after, html.flexbox .feature.flexbox .support:after, html.hsla .feature.hsla .support:after, html.multiplebgs .feature.multiplebgs .support:after, html.opacity .feature.opacity .support:after, html.rgba .feature.rgba .support:after, html.textshadow .feature.textshadow .support:after, html.cssanimations .feature.cssanimations .support:after, html.csscolumns .feature.csscolumns .support:after, html.cssgradients .feature.cssgradients .support:after, html.cssreflections .feature.cssreflections .support:after, html.csstransforms .feature.csstransforms .support:after, html.csstransforms3d .feature.csstransforms3d .support:after, html.csstransitions .feature.csstransitions .support:after, html.applicationcache .feature.applicationcache .support:after, html.canvas .feature.canvas .support:after, html.canvastext .feature.canvastext .support:after, html.draganddrop .feature.draganddrop .support:after, html.hashchange .feature.hashchange .support:after, html.history .feature.history .support:after, html.audio .feature.audio .support:after, html.video .feature.video .support:after, html.indexeddb .feature.indexeddb .support:after, html.localstorage .feature.localstorage .support:after, html.postmessage .feature.postmessage .support:after, html.sessionstorage .feature.sessionstorage .support:after, html.websockets .feature.websockets .support:after, html.websqldatabase .feature.websqldatabase .support:after, html.webworkers .feature.webworkers .support:after, html.geolocation .feature.geolocation .support:after, html.inlinesvg .feature.inlinesvg .support:after, html.smil .feature.smil .support:after, html.svg .feature.svg .support:after, html.svgclippaths .feature.svgclippaths .support:after, html.touch .feature.touch .support:after, html.webgl .feature.webgl .support:after {
   content: "Yep!";
-  background-color: #090;
+  background-color: #8bd71f;
 }

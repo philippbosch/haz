@@ -11,6 +11,7 @@ body {
 }
 
 #wrapper {
+    @include clearfix;
 }
 
 h1 {
@@ -29,6 +30,7 @@ section {
     @include float(left);
     @include box-sizing(border-box);
     padding: 0 1em;
+    margin-bottom: 1em;
     
     h1 {
         font-size: 36px;
@@ -56,7 +58,7 @@ table {
     margin-top: 1em;
     background: #FFF;
     @include border-radius(8px);
-    @include box-shadow(rgba(0,0,0,0.3) 0 1px);
+    @include box-shadow(rgba(0,0,0,0.5) 0 1px 2px);
     color: mix($green, #000, 70%);
     
     td, th {
@@ -72,14 +74,16 @@ table {
     
     .support {
         width: 64px;
-        text-align: center;
+        text-align: right;
         color: #FFF;
         
         &:after {
             padding: 4px 8px;
             content: "Nope";
-            background-color: #900;
+            background-color: #C00;
             @include border-radius(6px);
+            @include box-shadow(rgba(0,0,0,0.2) 0 1px 1px inset);
+            @include text-shadow(rgba(0,0,0,0.3) 0 1px);
         }
     }
 }
@@ -92,5 +96,5 @@ $selector: "";
 
 #{$selector} {
     content: "Yep!";
-    background-color: #090;
+    background-color: $green;
 }
