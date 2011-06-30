@@ -1,8 +1,8 @@
 $(document).ready(function() {
     var sectionTemplateSource = $('#section-template').html(),
         sectionTemplate = Handlebars.compile(sectionTemplateSource),
-        footerTemplateSource = $('#footer-template').html(),
-        footerTemplate = Handlebars.compile(footerTemplateSource),
+        useragentTemplateSource = $('#useragent-template').html(),
+        useragentTemplate = Handlebars.compile(useragentTemplateSource),
         features = "";
     
     $.getJSON('capabilities.json', function(capabilities) {
@@ -15,5 +15,5 @@ $(document).ready(function() {
         });
     });
     
-    $('#footer').html(footerTemplate({'useragent': navigator.userAgent}));
+    $('#useragent').html(useragentTemplate({'useragent': navigator.userAgent}));
 });

@@ -134,5 +134,13 @@ footer {
     clear: both;
     text-align: center;
     line-height: 1.4;
-    @include text-shadow(rgba(0,0,0,0.4) 0 1px);
+    
+    a {
+        color: $dark-green;
+        text-decoration: none;
+    }
+}
+
+#useragent {
+    margin-bottom: 1em;
 }
