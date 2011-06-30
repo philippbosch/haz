@@ -1,6 +1,19 @@
 @import "compass";
 
+body {
+    padding: 24px 16px;
+}
+
 section {
     width: 100%;
     @include float(none);
+}
+
+h1 {
+    font-size: 32px;
+    letter-spacing: -2px;
+}
+
+#github-ribbon {
+    display: none;
 }
