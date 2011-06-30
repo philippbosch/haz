@@ -3,59 +3,42 @@
     <head>
         <meta charset="utf-8">
         <title>Browser Capabilities</title>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
-        <script src="https://github.com/downloads/wycats/handlebars.js/handlebars.1.0.0.beta.3.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
         <link href="http://fonts.googleapis.com/css?family=Droid+Sans&amp;v1" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-        <script>
-            $(document).ready(function() {
-                var templateSource = $('#section-template').html(),
-                    template = Handlebars.compile(templateSource),
-                    features = "";
-                
-                $.getJSON('capabilities.json', function(capabilities) {
-                    $(capabilities.sections).each(function(i, section) {
-                        $('#features').append(template(section));
-                        
-                        $(section.features).each(function(i, feat) {
-                            features += feat.name + ", ";
-                        });
-                    });
-                });
-                
-                $('#user-agent').text(navigator.userAgent);
-            });
-        </script>
     </head>
     <body>
         <div id="wrapper">
             <header>
-                <h1>I can <span>haz</span> some ...</h1>
+                <h1>I can <span>haz</span> some ... ?</h1>
             </header>
             <div id="features"></div>
-            <footer>
-                <p>Your browser goes by the name of<br />«<span id="user-agent"></span>»</p>
-                <p></p>
+            <footer id="footer">
             </footer>
         </div>
+        <script id="section-template" type="text/x-handlebars-template">
+            <section>
+                <header>
+                    <h1>{{title}}</h1>
+                </header>
+                <table>
+                    <tbody>
+                        {{#each features}}
+                            <tr class="feature {{this.name}}">
+                                <th>{{this.title}}</th>
+                                <td class="support"></td>
+                            </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </section>
+        </script>
+        <script id="footer-template" type="text/x-handlebars-template">
+            <p>Your browser goes by the name of<br />«{{useragent}}»</p>
+        </script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+        <script src="https://github.com/downloads/wycats/handlebars.js/handlebars.1.0.0.beta.3.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+        <script src="/javascripts/master.js"></script>
     </body>
     
-    <script id="section-template" type="text/x-handlebars-template">
-        <section>
-            <header>
-                <h1>{{title}}</h1>
-            </header>
-            <table>
-                <tbody>
-                    {{#each features}}
-                        <tr class="feature {{this.name}}">
-                            <th>{{this.title}}</th>
-                            <td class="support"></td>
-                        </tr>
-                    {{/each}}
-                </tbody>
-            </table>
-        </section>
-    </script>
 </html>
