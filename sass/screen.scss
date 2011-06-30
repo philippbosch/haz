@@ -11,7 +11,8 @@ $white-kinda: #FEFFEB;
 $noise: image-url("noise.png");
 
 body {
-    background: $green $noise;
+    background-image: $noise;
+    background-color: $green;
     color: $white-kinda;
     font-family: "Droid Sans", sans-serif;
     padding: 48px;
@@ -100,20 +101,24 @@ section {
     
     .support {
         width: 64px;
-        text-align: right;
+        text-align: center;
         color: #FFF;
         padding-right: 1em;
         padding-left: 0.3em;
         position: absolute;
         top: 1em;
+        margin-top: -4px;
         right: 0;
+        display: block;
         
         &:after {
+            display: block;
             padding: 4px 8px;
-            content: "Nope.";
-            background: #C00 $noise;
+            content: "Nope";
+            @include background(linear-gradient(top, rgba(255,255,255,0.3), rgba(255,255,255,0)));
+            background-color: #C00;
+            border: 1px solid rgba(0,0,0,0.1);
             @include border-radius(6px);
-            @include box-shadow(rgba(0,0,0,0.2) 0 1px 1px inset);
             @include text-shadow(rgba(0,0,0,0.3) 0 1px);
         }
     }
