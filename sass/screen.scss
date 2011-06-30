@@ -120,7 +120,8 @@ section {
 }
 
 $selector: "";
-@each $feature in fontface, backgroundsize, borderimage, borderradius, boxshadow, flexbox, hsla, multiplebgs, opacity, rgba, textshadow, cssanimations, csscolumns, cssgradients, cssreflections, csstransforms, csstransforms3d, csstransitions, applicationcache, canvas, canvastext, draganddrop, hashchange, history, audio, video, indexeddb, localstorage, postmessage, sessionstorage, websockets, websqldatabase, webworkers, geolocation, inlinesvg, smil, svg, svgclippaths, touch, webgl {
+@each $feature in /* FEATURES START */fontface, backgroundsize, borderimage, borderradius, boxshadow, flexbox, hsla, multiplebgs, opacity, rgba, textshadow, cssanimations, csscolumns, cssgradients, cssreflections, csstransforms, csstransforms3d, csstransitions, applicationcache, canvas, canvastext, draganddrop, hashchange, history, audio, video, indexeddb, localstorage, postmessage, sessionstorage, websockets, websqldatabase, webworkers, geolocation, inlinesvg, smil, svg, svgclippaths, touch, webgl/* FEATURES END */ {
+
     $selector: "#{$selector} html.#{$feature} .feature.#{$feature} .support:after,";
 }
 
