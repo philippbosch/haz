@@ -2,6 +2,7 @@
 @import "compass";
 
 $green: #8bd71f;
+$dark-green: mix($green, #000, 70%);
 
 body {
     background-color: $green;
@@ -24,9 +25,14 @@ h1 {
     font-size: 48px;
     font-weight: bold;
     letter-spacing: -3px;
-    color: mix($green, #000, 70%);
+    color: $dark-green;
     @include text-shadow(rgba(255,255,255,0.4) 0 1px, rgba(0,0,0,0.4) 0 -1px, rgba(255,255,255,0.5) 0 0 15px);
-    margin-bottom: 0.2em;
+    margin-bottom: 0.5em;
+    
+    span {
+        color: darken($dark-green, 10%);
+        @include text-shadow(rgba(255,255,255,0.4) 0 -1px, rgba(0,0,0,0.6) 0 1px, rgba(255,255,255,0.5) 0 0 15px);
+    }
 }
 
 section {
@@ -41,7 +47,7 @@ section {
         font-size: 36px;
         font-weight: bold;
         color: #FFF;
-        @include text-shadow(rgba(0,0,0,0.3) 0 1px, rgba(255,255,255,0.8) 0 0 10px);
+        @include text-shadow(rgba(0,0,0,0.3) 0 1px, rgba(255,255,255,0.5) 0 0 15px);
         margin-bottom: 0;
         
         &:before, &:after {
@@ -84,7 +90,7 @@ table {
         
         &:after {
             padding: 4px 8px;
-            content: "Nope";
+            content: "Nope.";
             background-color: #C00;
             @include border-radius(6px);
             @include box-shadow(rgba(0,0,0,0.2) 0 1px 1px inset);
