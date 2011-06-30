@@ -40,7 +40,7 @@ h1 {
 }
 
 section {
-    width: 33%;
+    width: 33.333%;
     @include float(left);
     @include box-sizing(border-box);
     padding: 0 1em;
@@ -68,7 +68,7 @@ section {
     }
 }
 
-table {
+.features {
     width: 100%;
     margin-top: 1em;
     background: $white-kinda $noise;
@@ -76,18 +76,25 @@ table {
     @include box-shadow(rgba(0,0,0,0.5) 0 1px 2px);
     color: $even-darker-green;
     
-    td, th {
-        padding: 1em;
+    li {
+        padding: 0 1em;
         border-bottom: 1px dashed $light-green;
         @include text-shadow(
             $white-kinda 0 1px,
             rgba(0,0,0,0.15) 0 2px
         );
-    }
-    
-    tr:last-child {
-        td, th {
+        position: relative;
+        
+        &:last-child {
             border-bottom: 0;
+        }
+        
+        .title {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: block;
+            padding: 1em 64px 1em 0;
         }
     }
     
@@ -95,6 +102,11 @@ table {
         width: 64px;
         text-align: right;
         color: #FFF;
+        padding-right: 1em;
+        padding-left: 0.3em;
+        position: absolute;
+        top: 1em;
+        right: 0;
         
         &:after {
             padding: 4px 8px;

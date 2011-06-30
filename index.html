@@ -5,6 +5,7 @@
         <title>haz.io › HTML5 &amp; CSS3 Browser Capabilities</title>
         <link href="http://fonts.googleapis.com/css?family=Droid+Sans&amp;v1" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="/stylesheets/mobile.css" media="screen and (max-width: 768px)" rel="stylesheet" type="text/css" /> 
     </head>
     <body>
         <div id="wrapper">
@@ -21,16 +22,14 @@
                 <header>
                     <h1>{{title}}</h1>
                 </header>
-                <table>
-                    <tbody>
-                        {{#each features}}
-                            <tr class="feature {{this.name}}">
-                                <th>{{this.title}}</th>
-                                <td class="support"></td>
-                            </tr>
-                        {{/each}}
-                    </tbody>
-                </table>
+                <ul class="features">
+                    {{#each features}}
+                        <li class="feature {{this.name}}">
+                            <span class="title">{{this.title}}</span>
+                            <span class="support"></span>
+                        </li>
+                    {{/each}}
+                </ul>
             </section>
         </script>
         <script id="footer-template" type="text/x-handlebars-template">

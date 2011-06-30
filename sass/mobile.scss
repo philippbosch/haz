@@ -1,0 +1,6 @@
+@import "compass";
+
+section {
+    width: 100%;
+    @include float(none);
+}
