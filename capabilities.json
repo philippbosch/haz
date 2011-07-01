@@ -28,6 +28,10 @@
                     "title": "Flexible Box Model"
                 },
                 {
+                    "name": "generatedcontent",
+                    "title": "Generated Content"
+                },
+                {
                     "name": "hsla",
                     "title": "hsla()"
                 },
