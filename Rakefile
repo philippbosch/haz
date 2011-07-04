@@ -33,5 +33,5 @@ end
 
 desc "Deploy to server"
 task :deploy do
-  sh "compass compile && rsync -rtz --exclude .git --exclude .sass-cache --delete . pb@bc.pb.io:projects/haz/"
+  sh "compass compile && rsync -rtz --exclude .git --exclude .sass-cache . pb@haz.io:projects/haz/"
 end
