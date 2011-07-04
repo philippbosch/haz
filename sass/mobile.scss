@@ -4,14 +4,40 @@ body {
     padding: 24px 16px;
 }
 
+h1 {
+    font-size: 30px;
+    letter-spacing: -2px;
+    margin-bottom: 0.5em;
+}
+
 section {
     width: 100%;
     @include float(none);
+    
+    h1 {
+        font-size: 24px;
+    }
 }
 
-h1 {
-    font-size: 32px;
-    letter-spacing: -2px;
+.features {
+    li {
+        padding: 0 0.5em;
+        
+        .title {
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+        }
+    }
+    
+    .support {
+        padding-right: 0.5em;
+        top: 0.5em;
+        margin-top: -2px;
+        
+        &:after {
+            padding: 2px 4px;
+        }
+    }
 }
 
 #github-ribbon {
