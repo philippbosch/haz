@@ -13,7 +13,7 @@ $(document).ready(function() {
         $('html').addClass((!support?'no-':'')+'inputtypes-'+type);
     });
     
-    $.getJSON('capabilities.json?v=1.1', function(capabilities) {
+    $.getJSON('capabilities.json?v=1.1.1', function(capabilities) {
         $(capabilities.sections).each(function(i, section) {
             $('#features').append(sectionTemplate(section));
             

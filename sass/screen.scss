@@ -45,7 +45,11 @@ section {
     @include float(left);
     @include box-sizing(border-box);
     padding: 0 1em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
+    
+    &:nth-child(4) {
+        clear: left;
+    }
     
     h1 {
         text-align: center;
