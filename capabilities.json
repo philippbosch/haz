@@ -147,6 +147,104 @@
             ]
         },
         {
+            "title": "Input Types",
+            "features": [
+                {
+                    "name": "inputtypes-search",
+                    "title": "search"
+                },
+                {
+                    "name": "inputtypes-tel",
+                    "title": "tel"
+                },
+                {
+                    "name": "inputtypes-url",
+                    "title": "url"
+                },
+                {
+                    "name": "inputtypes-email",
+                    "title": "email"
+                },
+                {
+                    "name": "inputtypes-datetime",
+                    "title": "datetime"
+                },
+                {
+                    "name": "inputtypes-date",
+                    "title": "date"
+                },
+                {
+                    "name": "inputtypes-month",
+                    "title": "month"
+                },
+                {
+                    "name": "inputtypes-week",
+                    "title": "week"
+                },
+                {
+                    "name": "inputtypes-datetime-local",
+                    "title": "datetime-local"
+                },
+                {
+                    "name": "inputtypes-number",
+                    "title": "number"
+                },
+                {
+                    "name": "inputtypes-range",
+                    "title": "range"
+                },
+                {
+                    "name": "inputtypes-color",
+                    "title": "color"
+                }
+            ]
+        },
+        {
+            "title": "Input Attributes",
+            "features": [
+                {
+                    "name": "input-autocomplete",
+                    "title": "autocomplete"
+                },
+                {
+                    "name": "input-autofocus",
+                    "title": "autofocus"
+                },
+                {
+                    "name": "input-list",
+                    "title": "list"
+                },
+                {
+                    "name": "input-placeholder",
+                    "title": "placeholder"
+                },
+                {
+                    "name": "input-max",
+                    "title": "max"
+                },
+                {
+                    "name": "input-min",
+                    "title": "min"
+                },
+                {
+                    "name": "input-multiple",
+                    "title": "multiple"
+                },
+                {
+                    "name": "input-pattern",
+                    "title": "pattern"
+                },
+                {
+                    "name": "input-required",
+                    "title": "required"
+                },
+                {
+                    "name": "input-step",
+                    "title": "step"
+                }
+            ]
+        },
+        {
             "title": "Miscellaneous",
             "features": [
                 {
