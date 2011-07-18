@@ -178,6 +178,59 @@
                     "title": "WebGL"
                 }
             ]
+        },
+        {
+            "title": "Input Types",
+            "features": [
+                {
+                    "name": "inputtypes-search",
+                    "title": "search"
+                },
+                {
+                    "name": "inputtypes-tel",
+                    "title": "tel"
+                },
+                {
+                    "name": "inputtypes-url",
+                    "title": "url"
+                },
+                {
+                    "name": "inputtypes-email",
+                    "title": "email"
+                },
+                {
+                    "name": "inputtypes-datetime",
+                    "title": "datetime"
+                },
+                {
+                    "name": "inputtypes-date",
+                    "title": "date"
+                },
+                {
+                    "name": "inputtypes-month",
+                    "title": "month"
+                },
+                {
+                    "name": "inputtypes-week",
+                    "title": "week"
+                },
+                {
+                    "name": "inputtypes-datetime-local",
+                    "title": "datetime-local"
+                },
+                {
+                    "name": "inputtypes-number",
+                    "title": "number"
+                },
+                {
+                    "name": "inputtypes-range",
+                    "title": "range"
+                },
+                {
+                    "name": "inputtypes-color",
+                    "title": "color"
+                }
+            ]
         }
     ]
 }

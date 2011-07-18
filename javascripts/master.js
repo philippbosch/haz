@@ -5,6 +5,10 @@ $(document).ready(function() {
         useragentTemplate = Handlebars.compile(useragentTemplateSource),
         features = "";
     
+    $.each(Modernizr.inputtypes, function(type, support) {
+        $('html').addClass((!support?'no-':'')+'inputtypes-'+type);
+    });
+    
     $.getJSON('capabilities.json', function(capabilities) {
         $(capabilities.sections).each(function(i, section) {
             $('#features').append(sectionTemplate(section));
