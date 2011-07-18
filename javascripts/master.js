@@ -5,6 +5,10 @@ $(document).ready(function() {
         useragentTemplate = Handlebars.compile(useragentTemplateSource),
         features = "";
     
+    $.each(Modernizr.input, function(type, support) {
+        $('html').addClass((!support?'no-':'')+'input-'+type);
+    });
+    
     $.each(Modernizr.inputtypes, function(type, support) {
         $('html').addClass((!support?'no-':'')+'inputtypes-'+type);
     });

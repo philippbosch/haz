@@ -147,39 +147,6 @@
             ]
         },
         {
-            "title": "Miscellaneous",
-            "features": [
-                {
-                    "name": "geolocation",
-                    "title": "Geolocation API"
-                },
-                {
-                    "name": "inlinesvg",
-                    "title": "Inline SVG"
-                },
-                {
-                    "name": "smil",
-                    "title": "SMIL"
-                },
-                {
-                    "name": "svg",
-                    "title": "SVG"
-                },
-                {
-                    "name": "svgclippaths",
-                    "title": "SVG Clip paths"
-                },
-                {
-                    "name": "touch",
-                    "title": "Touch Events"
-                },
-                {
-                    "name": "webgl",
-                    "title": "WebGL"
-                }
-            ]
-        },
-        {
             "title": "Input Types",
             "features": [
                 {
@@ -229,6 +196,84 @@
                 {
                     "name": "inputtypes-color",
                     "title": "color"
+                }
+            ]
+        },
+        {
+            "title": "Input Attributes",
+            "features": [
+                {
+                    "name": "input-autocomplete",
+                    "title": "autocomplete"
+                },
+                {
+                    "name": "input-autofocus",
+                    "title": "autofocus"
+                },
+                {
+                    "name": "input-list",
+                    "title": "list"
+                },
+                {
+                    "name": "input-placeholder",
+                    "title": "placeholder"
+                },
+                {
+                    "name": "input-max",
+                    "title": "max"
+                },
+                {
+                    "name": "input-min",
+                    "title": "min"
+                },
+                {
+                    "name": "input-multiple",
+                    "title": "multiple"
+                },
+                {
+                    "name": "input-pattern",
+                    "title": "pattern"
+                },
+                {
+                    "name": "input-required",
+                    "title": "required"
+                },
+                {
+                    "name": "input-step",
+                    "title": "step"
+                }
+            ]
+        },
+        {
+            "title": "Miscellaneous",
+            "features": [
+                {
+                    "name": "geolocation",
+                    "title": "Geolocation API"
+                },
+                {
+                    "name": "inlinesvg",
+                    "title": "Inline SVG"
+                },
+                {
+                    "name": "smil",
+                    "title": "SMIL"
+                },
+                {
+                    "name": "svg",
+                    "title": "SVG"
+                },
+                {
+                    "name": "svgclippaths",
+                    "title": "SVG Clip paths"
+                },
+                {
+                    "name": "touch",
+                    "title": "Touch Events"
+                },
+                {
+                    "name": "webgl",
+                    "title": "WebGL"
                 }
             ]
         }
