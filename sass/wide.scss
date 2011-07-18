@@ -1,3 +1,7 @@
 section {
     width: 20%;
+    
+    &:nth-child(4) {
+        clear: none;
+    }
 }
