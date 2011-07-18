@@ -18,6 +18,13 @@ task :build do
   capabilities["sections"].each do |section|
     section["features"].each do |feature|
       all_features.push feature["name"]
+      
+      if feature["subfeatures"]
+        feature["subfeatures"].each do |subfeature|
+          all_features.push subfeature["name"]
+        end
+      end
+      
     end
   end
   

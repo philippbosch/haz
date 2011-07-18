@@ -27,10 +27,10 @@
                     <!-- twitter -->
                     <a href="http://twitter.com/haz_io" class="twitter-follow-button" data-button="blue" data-text-color="#FFFFFF" data-link-color="#FFFFFF" data-show-screen-name="false" data-show-count="false" data-width="61px">Follow @haz_io</a>
                     <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="haz_io" data-width="80px">Tweet</a>
-                
+                    
                     <!-- Google +1 -->
                     <g:plusone size="medium" count="false" href="http://haz.io/"></g:plusone>
-                
+                    
                     <!-- Facebook -->
                     <span id="fb-root"></span></script><fb:like href="http://haz.io/" send="false" width="49" height="20" show_faces="false" font="" layout="button_count" style="position: relative; top: -3px;"></fb:like>
                 </div>
@@ -47,6 +47,16 @@
                         <li class="feature {{this.name}}">
                             <span class="title">{{this.title}}</span>
                             <span class="support"></span>
+                            {{#if subfeatures}}
+                                <ul class="subfeatures">
+                                    {{#each subfeatures}}
+                                        <li class="feature {{this.name}}">
+                                            <span class="title">{{this.title}}</span>
+                                            <span class="support"></span>
+                                        </li>
+                                    {{/each}}
+                                </ul>
+                            {{/if}}
                         </li>
                     {{/each}}
                 </ul>

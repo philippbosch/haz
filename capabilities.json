@@ -110,11 +110,43 @@
                 },
                 {
                     "name": "audio",
-                    "title": "HTML5 Audio"
+                    "title": "HTML5 Audio",
+                    "subfeatures": [
+                        {
+                            "name": "audio-mp3",
+                            "title": "MP3"
+                        },
+                        {
+                            "name": "audio-wav",
+                            "title": "WAV"
+                        },
+                        {
+                            "name": "audio-m4a",
+                            "title": "M4A"
+                        },
+                        {
+                            "name": "audio-ogg",
+                            "title": "Ogg"
+                        }
+                    ]
                 },
                 {
                     "name": "video",
-                    "title": "HTML5 Video"
+                    "title": "HTML5 Video",
+                    "subfeatures": [
+                        {
+                            "name": "video-h264",
+                            "title": "H.264"
+                        },
+                        {
+                            "name": "video-ogg",
+                            "title": "Ogg"
+                        },
+                        {
+                            "name": "video-webm",
+                            "title": "WebM"
+                        }
+                    ]
                 },
                 {
                     "name": "indexeddb",

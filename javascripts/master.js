@@ -5,12 +5,20 @@ $(document).ready(function() {
         useragentTemplate = Handlebars.compile(useragentTemplateSource),
         features = "";
     
-    $.each(Modernizr.input, function(type, support) {
-        $('html').addClass((!support?'no-':'')+'input-'+type);
+    $.each(Modernizr.input, function(attr, support) {
+        $('html').addClass((!support?'no-':'')+'input-'+attr);
     });
     
     $.each(Modernizr.inputtypes, function(type, support) {
         $('html').addClass((!support?'no-':'')+'inputtypes-'+type);
+    });
+    
+    $.each(Modernizr.video, function(type, support) {
+        $('html').addClass((support===''?'no-':(support=='maybe'?'maybe-':''))+'video-'+type);
+    });
+    
+    $.each(Modernizr.audio, function(type, support) {
+        $('html').addClass((support===''?'no-':(support=='maybe'?'maybe-':''))+'audio-'+type);
     });
     
     $.getJSON('capabilities.json?v=1.1.1', function(capabilities) {
