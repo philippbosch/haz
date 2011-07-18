@@ -49,7 +49,7 @@ section {
     
     h1 {
         text-align: center;
-        font-size: 36px;
+        font-size: 32px;
         font-weight: bold;
         color: $white-kinda;
         @include text-shadow(rgba(0,0,0,0.3) 0 1px, rgba(255,255,255,0.5) 0 0 15px);
@@ -79,7 +79,7 @@ section {
     
     li {
         padding: 0 1em;
-        border-bottom: 1px dashed $light-green;
+        border-bottom: 1px dotted $light-green;
         @include text-shadow(
             $white-kinda 0 1px,
             rgba(0,0,0,0.15) 0 2px
@@ -95,31 +95,32 @@ section {
             overflow: hidden;
             text-overflow: ellipsis;
             display: block;
-            padding: 1em 64px 1em 0;
+            padding: 0.5em 64px 0.5em 0;
         }
     }
     
     .support {
-        width: 64px;
         text-align: center;
         color: #FFF;
         padding-right: 1em;
         padding-left: 0.3em;
         position: absolute;
-        top: 1em;
-        margin-top: -4px;
+        top: 0.5em;
+        margin-top: -2px;
         right: 0;
         display: block;
         
         &:after {
+            width: 18px;
+            height: 18px;
             display: block;
-            padding: 4px 8px;
-            content: "Nope";
+            content: " ";
             @include background(linear-gradient(top, rgba(255,255,255,0.3), rgba(255,255,255,0)));
             background-color: #C00;
             border: 1px solid rgba(0,0,0,0.1);
-            @include border-radius(6px);
+            @include border-radius(9px);
             @include text-shadow(rgba(0,0,0,0.3) 0 1px);
+            @include box-shadow(rgba(255,255,255,0.6) 0 1px 1px inset, rgba(0,0,0,0.15) 0 -1px 1px inset);
         }
     }
 }
@@ -131,7 +132,6 @@ $selector: "";
 }
 
 #{$selector} {
-    content: "Yep!";
     background-color: $green;
 }
 
