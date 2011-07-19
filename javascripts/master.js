@@ -21,7 +21,7 @@ $(document).ready(function() {
         $('html').addClass((support===''?'no-':(support=='maybe'?'maybe-':''))+'audio-'+type);
     });
     
-    $.getJSON('capabilities.json?v=1.2', function(capabilities) {
+    $.getJSON('capabilities.json?v=1.3', function(capabilities) {
         $(capabilities.sections).each(function(i, section) {
             $('#features').append(sectionTemplate(section));
             
