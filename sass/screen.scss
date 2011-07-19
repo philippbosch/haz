@@ -140,12 +140,15 @@ section {
             width: 18px;
             height: 18px;
             display: block;
-            content: " ";
+            content: "N";
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: bold;
             @include background(linear-gradient(top, rgba(255,255,255,0.3), rgba(255,255,255,0)));
             background-color: $red;
             border: 1px solid rgba(0,0,0,0.1);
             @include border-radius(9px);
-            @include text-shadow(rgba(0,0,0,0.3) 0 1px);
+            @include text-shadow(rgba(0,0,0,0.3) 0 -1px);
             @include box-shadow(rgba(255,255,255,0.6) 0 1px 1px inset, rgba(0,0,0,0.15) 0 -1px 1px inset);
         }
     }
@@ -177,10 +180,12 @@ $maybeSelector: "";
 
 #{$yesSelector} {
     background-color: $green;
+    content: "Y";
 }
 
 #{$maybeSelector} {
     background-color: $yellow;
+    content: "M";
 }
 
 footer {
