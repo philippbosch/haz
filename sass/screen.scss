@@ -23,6 +23,21 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+    
+    &.spec {
+        &:after {
+            content: " ›";
+            color: #CCC;
+            text-transform: uppercase;
+            font-size: 75%;
+            @include text-shadow(none);
+        }
+        
+        &:hover:after {
+            color: #999;
+            content: "   Spec ›";
+        }
+    }
 }
 
 #wrapper {
