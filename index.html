@@ -45,7 +45,11 @@
                 <ul class="features">
                     {{#each features}}
                         <li class="feature {{this.name}}">
-                            <span class="title">{{this.title}}</span>
+                            {{#if this.specurl}}
+                                <a href="{{this.specurl}}" class="title spec" title="Check the spec for {{this.title}}">{{this.title}}</a>
+                            {{else}}
+                                <span class="title">{{this.title}}</span>
+                            {{/if}}
                             <span class="support"></span>
                             {{#if subfeatures}}
                                 <ul class="subfeatures">

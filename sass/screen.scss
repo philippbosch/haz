@@ -20,6 +20,11 @@ body {
     padding: 48px;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 #wrapper {
     @include clearfix;
     
