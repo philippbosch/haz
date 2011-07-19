@@ -20,6 +20,26 @@ body {
     padding: 48px;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+    
+    &.spec {
+        &:after {
+            content: " ›";
+            color: #CCC;
+            text-transform: uppercase;
+            font-size: 75%;
+            @include text-shadow(none);
+        }
+        
+        &:hover:after {
+            color: #999;
+            content: "   Spec ›";
+        }
+    }
+}
+
 #wrapper {
     @include clearfix;
     
@@ -148,7 +168,7 @@ section {
 $yesSelector: "";
 $noSelector: "";
 $maybeSelector: "";
-@each $feature in /* FEATURES START */fontface, backgroundsize, borderimage, borderradius, boxshadow, flexbox, generatedcontent, hsla, multiplebgs, opacity, rgba, textshadow, cssanimations, csscolumns, cssgradients, cssreflections, csstransforms, csstransforms3d, csstransitions, applicationcache, canvas, canvastext, draganddrop, hashchange, history, audio, audio-mp3, audio-wav, audio-m4a, audio-ogg, video, video-h264, video-ogg, video-webm, indexeddb, localstorage, postmessage, sessionstorage, websockets, websqldatabase, webworkers, inputtypes-search, inputtypes-tel, inputtypes-url, inputtypes-email, inputtypes-datetime, inputtypes-date, inputtypes-month, inputtypes-week, inputtypes-datetime-local, inputtypes-number, inputtypes-range, inputtypes-color, input-autocomplete, input-autofocus, input-list, input-placeholder, input-max, input-min, input-multiple, input-pattern, input-required, input-step, geolocation, inlinesvg, smil, svg, svgclippaths, touch, webgl/* FEATURES END */ {
+@each $feature in /* FEATURES START */fontface, backgroundsize, borderimage, borderradius, boxshadow, flexbox, generatedcontent, hsla, multiplebgs, opacity, rgba, textshadow, cssanimations, csscolumns, cssgradients, cssreflections, csstransforms, csstransforms3d, csstransitions, applicationcache, canvas, canvastext, draganddrop, hashchange, history, audio, audio-mp3, audio-wav, audio-m4a, audio-ogg, video, video-h264, video-ogg, video-webm, indexeddb, localstorage, postmessage, sessionstorage, websockets, websqldatabase, webworkers, inputtypes-search, inputtypes-tel, inputtypes-url, inputtypes-email, inputtypes-datetime, inputtypes-date, inputtypes-month, inputtypes-week, inputtypes-time, inputtypes-datetime-local, inputtypes-number, inputtypes-range, inputtypes-color, input-autocomplete, input-autofocus, input-list, input-placeholder, input-max, input-min, input-multiple, input-pattern, input-required, input-step, geolocation, inlinesvg, smil, svg, svgclippaths, touch, webgl/* FEATURES END */ {
 
     $yesSelector: "#{$yesSelector} html.#{$feature} .feature.#{$feature} > .support:after,";
     $noSelector: "#{$noSelector} html.no-#{$feature} .feature.#{$feature} > .support:after,";

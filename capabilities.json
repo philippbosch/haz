@@ -5,63 +5,78 @@
             "features": [
                 {
                     "name": "fontface",
-                    "title": "@font-face"
+                    "title": "@font-face",
+                    "specurl": "http://dev.w3.org/csswg/css3-fonts/"
                 },
                 {
                     "name": "backgroundsize",
-                    "title": "background-size"
+                    "title": "background-size",
+                    "specurl": "http://dev.w3.org/csswg/css3-background/#the-background-size"
                 },
                 {
                     "name": "borderimage",
-                    "title": "border-image"
+                    "title": "border-image",
+                    "specurl": "http://dev.w3.org/csswg/css3-background/#border-images"
                 },
                 {
                     "name": "borderradius",
-                    "title": "border-radius"
+                    "title": "border-radius",
+                    "specurl": "http://dev.w3.org/csswg/css3-background/#corners"
                 },
                 {
                     "name": "boxshadow",
-                    "title": "box-shadow"
+                    "title": "box-shadow",
+                    "specurl": "http://dev.w3.org/csswg/css3-background/#the-box-shadow"
                 },
                 {
                     "name": "flexbox",
-                    "title": "Flexible Box Model"
+                    "title": "Flexible Box Model",
+                    "specurl": "http://dev.w3.org/csswg/css3-flexbox/"
                 },
                 {
                     "name": "generatedcontent",
-                    "title": "Generated Content"
+                    "title": "Generated Content",
+                    "specurl": "http://dev.w3.org/csswg/css3-content/"
                 },
                 {
                     "name": "hsla",
-                    "title": "hsla()"
+                    "title": "hsla()",
+                    "specurl": "http://dev.w3.org/csswg/css3-color/#hsla-color"
                 },
                 {
                     "name": "multiplebgs",
-                    "title": "Multiple backgrounds"
+                    "title": "Multiple backgrounds",
+                    "specurl": "http://dev.w3.org/csswg/css3-background/#layering"
                 },
                 {
                     "name": "opacity",
-                    "title": "opacity"
+                    "title": "opacity",
+                    "specurl": "http://dev.w3.org/csswg/css3-color/#transparency"
                 },
                 {
                     "name": "rgba",
-                    "title": "rgba()"
+                    "title": "rgba()",
+                    "specurl": "http://dev.w3.org/csswg/css3-color/#rgba-color"
                 },
                 {
                     "name": "textshadow",
-                    "title": "text-shadow"
+                    "title": "text-shadow",
+                    "specurl": "http://dev.w3.org/csswg/css3-text/#text-shadow"
                 },
                 {
                     "name": "cssanimations",
-                    "title": "CSS Animations"
+                    "title": "CSS Animations",
+                    "specurl": "http://dev.w3.org/csswg/css3-animations/"
                 },
                 {
                     "name": "csscolumns",
-                    "title": "CSS Columns"
+                    "title": "CSS Columns",
+                    "specurl": "http://dev.w3.org/csswg/css3-multicol/"
                 },
                 {
                     "name": "cssgradients",
-                    "title": "CSS Gradients"
+                    "title": "CSS Gradients",
+                    "specurl": "http://dev.w3.org/csswg/css3-images/#gradients"
                 },
                 {
                     "name": "cssreflections",
@@ -69,15 +84,18 @@
                 },
                 {
                     "name": "csstransforms",
-                    "title": "CSS 2D Transforms"
+                    "title": "CSS 2D Transforms",
+                    "specurl": "http://dev.w3.org/csswg/css3-2d-transforms/"
                 },
                 {
                     "name": "csstransforms3d",
-                    "title": "CSS 3D Transforms"
+                    "title": "CSS 3D Transforms",
+                    "specurl": "http://dev.w3.org/csswg/css3-3d-transforms/"
                 },
                 {
                     "name": "csstransitions",
-                    "title": "CSS Transitions"
+                    "title": "CSS Transitions",
+                    "specurl": "http://dev.w3.org/csswg/css3-transitions/"
                 }
             ]
         },
@@ -86,31 +104,38 @@
             "features": [
                 {
                     "name": "applicationcache",
-                    "title": "applicationCache"
+                    "title": "applicationCache",
+                    "specurl": "http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html"
                 },
                 {
                     "name": "canvas",
-                    "title": "Canvas"
+                    "title": "Canvas",
+                    "specurl": "http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html"
                 },
                 {
                     "name": "canvastext",
-                    "title": "Canvas Text"
+                    "title": "Canvas Text",
+                    "specurl": "http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#text-0"
                 },
                 {
                     "name": "draganddrop",
-                    "title": "Drag and Drop"
+                    "title": "Drag and Drop",
+                    "specurl": "http://www.whatwg.org/specs/web-apps/current-work/multipage/dnd.html"
                 },
                 {
                     "name": "hashchange",
-                    "title": "hashchange Event"
+                    "title": "hashchange Event",
+                    "specurl": "http://www.whatwg.org/specs/web-apps/current-work/multipage/webappapis.html#handler-window-onhashchange"
                 },
                 {
                     "name": "history",
-                    "title": "History Management"
+                    "title": "History Management",
+                    "specurl": "http://www.whatwg.org/specs/web-apps/current-work/multipage/history.html#the-history-interface"
                 },
                 {
                     "name": "audio",
                     "title": "HTML5 Audio",
+                    "specurl": "http://www.whatwg.org/specs/web-apps/current-work/multipage/the-video-element.html#the-audio-element",
                     "subfeatures": [
                         {
                             "name": "audio-mp3",
@@ -133,6 +158,7 @@
                 {
                     "name": "video",
                     "title": "HTML5 Video",
+                    "specurl": "http://www.whatwg.org/specs/web-apps/current-work/multipage/the-video-element.html#the-video-element",
                     "subfeatures": [
                         {
                             "name": "video-h264",
@@ -150,31 +176,38 @@
                 },
                 {
                     "name": "indexeddb",
-                    "title": "IndexedDB"
+                    "title": "IndexedDB",
+                    "specurl": "http://www.w3.org/TR/IndexedDB/"
                 },
                 {
                     "name": "localstorage",
-                    "title": "localStorage"
+                    "title": "localStorage",
+                    "specurl": "http://dev.w3.org/html5/webstorage/#the-localstorage-attribute"
                 },
                 {
                     "name": "postmessage",
-                    "title": "Cross-window Messaging"
+                    "title": "Cross-window Messaging",
+                    "specurl": "http://www.whatwg.org/specs/web-apps/current-work/multipage/comms.html#web-messaging"
                 },
                 {
                     "name": "sessionstorage",
-                    "title": "sessionStorage"
+                    "title": "sessionStorage",
+                    "specurl": "http://dev.w3.org/html5/webstorage/#the-sessionstorage-attribute"
                 },
                 {
                     "name": "websockets",
-                    "title": "Web Sockets"
+                    "title": "Web Sockets",
+                    "specurl": "http://dev.w3.org/html5/websockets/"
                 },
                 {
                     "name": "websqldatabase",
-                    "title": "Web SQL Database"
+                    "title": "Web SQL Database",
+                    "specurl": "http://www.w3.org/TR/webdatabase/"
                 },
                 {
                     "name": "webworkers",
-                    "title": "Web Workers"
+                    "title": "Web Workers",
+                    "specurl": "http://www.whatwg.org/specs/web-apps/current-work/complete/workers.html"
                 }
             ]
         },
@@ -183,51 +216,68 @@
             "features": [
                 {
                     "name": "inputtypes-search",
-                    "title": "search"
+                    "title": "search",
+                    "specurl": "http://dev.w3.org/html5/spec/Overview.html#text-state-and-search-state"
                 },
                 {
                     "name": "inputtypes-tel",
-                    "title": "tel"
+                    "title": "tel",
+                    "specurl": "http://dev.w3.org/html5/spec/Overview.html#telephone-state"
                 },
                 {
                     "name": "inputtypes-url",
-                    "title": "url"
+                    "title": "url",
+                    "specurl": "http://dev.w3.org/html5/spec/Overview.html#url-state"
                 },
                 {
                     "name": "inputtypes-email",
-                    "title": "email"
+                    "title": "email",
+                    "specurl": "http://dev.w3.org/html5/spec/Overview.html#e-mail-state"
                 },
                 {
                     "name": "inputtypes-datetime",
-                    "title": "datetime"
+                    "title": "datetime",
+                    "specurl": "http://dev.w3.org/html5/spec/Overview.html#date-and-time-state"
                 },
                 {
                     "name": "inputtypes-date",
-                    "title": "date"
+                    "title": "date",
+                    "specurl": "http://dev.w3.org/html5/spec/Overview.html#date-state"
                 },
                 {
                     "name": "inputtypes-month",
-                    "title": "month"
+                    "title": "month",
+                    "specurl": "http://dev.w3.org/html5/spec/Overview.html#month-state"
                 },
                 {
                     "name": "inputtypes-week",
-                    "title": "week"
+                    "title": "week",
+                    "specurl": "http://dev.w3.org/html5/spec/Overview.html#week-state"
+                },
+                {
+                    "name": "inputtypes-time",
+                    "title": "time",
+                    "specurl": "http://dev.w3.org/html5/spec/Overview.html#time-state"
                 },
                 {
                     "name": "inputtypes-datetime-local",
-                    "title": "datetime-local"
+                    "title": "datetime-local",
+                    "specurl": "http://dev.w3.org/html5/spec/Overview.html#local-date-and-time-state"
                 },
                 {
                     "name": "inputtypes-number",
-                    "title": "number"
+                    "title": "number",
+                    "specurl": "http://dev.w3.org/html5/spec/Overview.html#number-state"
                 },
                 {
                     "name": "inputtypes-range",
-                    "title": "range"
+                    "title": "range",
+                    "specurl": "http://dev.w3.org/html5/spec/Overview.html#range-state"
                 },
                 {
                     "name": "inputtypes-color",
-                    "title": "color"
+                    "title": "color",
+                    "specurl": "http://dev.w3.org/html5/spec/Overview.html#color-state"
                 }
             ]
         },
@@ -236,43 +286,53 @@
             "features": [
                 {
                     "name": "input-autocomplete",
-                    "title": "autocomplete"
+                    "title": "autocomplete",
+                    "specurl": "http://dev.w3.org/html5/spec/Overview.html#the-autocomplete-attribute"
                 },
                 {
                     "name": "input-autofocus",
-                    "title": "autofocus"
+                    "title": "autofocus",
+                    "specurl": "http://dev.w3.org/html5/spec/Overview.html#attr-fe-autofocus"
                 },
                 {
                     "name": "input-list",
-                    "title": "list"
+                    "title": "list",
+                    "specurl": "http://dev.w3.org/html5/spec/Overview.html#attr-input-list"
                 },
                 {
                     "name": "input-placeholder",
-                    "title": "placeholder"
+                    "title": "placeholder",
+                    "specurl": "http://dev.w3.org/html5/spec/Overview.html#the-placeholder-attribute"
                 },
                 {
                     "name": "input-max",
-                    "title": "max"
+                    "title": "max",
+                    "specurl": "http://dev.w3.org/html5/spec/Overview.html#the-min-and-max-attributes"
                 },
                 {
                     "name": "input-min",
-                    "title": "min"
+                    "title": "min",
+                    "specurl": "http://dev.w3.org/html5/spec/Overview.html#the-min-and-max-attributes"
                 },
                 {
                     "name": "input-multiple",
-                    "title": "multiple"
+                    "title": "multiple",
+                    "specurl": "http://dev.w3.org/html5/spec/Overview.html#the-multiple-attribute"
                 },
                 {
                     "name": "input-pattern",
-                    "title": "pattern"
+                    "title": "pattern",
+                    "specurl": "http://dev.w3.org/html5/spec/Overview.html#the-pattern-attribute"
                 },
                 {
                     "name": "input-required",
-                    "title": "required"
+                    "title": "required",
+                    "specurl": "http://dev.w3.org/html5/spec/Overview.html#the-required-attribute"
                 },
                 {
                     "name": "input-step",
-                    "title": "step"
+                    "title": "step",
+                    "specurl": "http://dev.w3.org/html5/spec/Overview.html#the-step-attribute"
                 }
             ]
         },
@@ -281,31 +341,38 @@
             "features": [
                 {
                     "name": "geolocation",
-                    "title": "Geolocation API"
+                    "title": "Geolocation API",
+                    "specurl": "http://dev.w3.org/geo/api/spec-source.html"
                 },
                 {
                     "name": "inlinesvg",
-                    "title": "Inline SVG"
+                    "title": "Inline SVG",
+                    "specurl": "http://dev.w3.org/html5/spec/Overview.html#svg-0"
                 },
                 {
                     "name": "smil",
-                    "title": "SMIL"
+                    "title": "SMIL",
+                    "specurl": "http://www.w3.org/TR/REC-smil/"
                 },
                 {
                     "name": "svg",
-                    "title": "SVG"
+                    "title": "SVG",
+                    "specurl": "http://www.w3.org/TR/SVG/"
                 },
                 {
                     "name": "svgclippaths",
-                    "title": "SVG Clip paths"
+                    "title": "SVG Clip paths",
+                    "specurl": "http://www.w3.org/TR/SVG/masking.html#ClipPathProperty"
                 },
                 {
                     "name": "touch",
-                    "title": "Touch Events"
+                    "title": "Touch Events",
+                    "specurl": "http://www.w3.org/TR/2011/WD-touch-events-20110505/"
                 },
                 {
                     "name": "webgl",
-                    "title": "WebGL"
+                    "title": "WebGL",
+                    "specurl": "http://www.khronos.org/registry/webgl/specs/latest/"
                 }
             ]
         }
