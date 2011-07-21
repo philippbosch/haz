@@ -17,6 +17,10 @@
             <header>
                 <h1>I can <span>haz</span> some ... ?</h1>
             </header>
+            <!--[if lt IE 8]>
+                <p class="info">Sorry, but haz.io currently does not support IE7 or lower. Expect improvement soon.</p>
+            <![endif]-->
+            
             <div id="features"></div>
             <footer>
                 <div id="useragent"></div>
@@ -80,7 +84,10 @@
         <script src="http://cloud.github.com/downloads/wycats/handlebars.js/handlebars.1.0.0.beta.3.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
         <script src="/javascripts/modernizr.js?v=2.0.6"></script>
-        <script src="/javascripts/master.js?v=1.3.1"></script>
+        <!--[if gte IE 8]><!-->
+            <script src="/javascripts/master.js?v=1.3.1"></script>
+        <!--<![endif]-->
+        
         
         <!-- Badges -->
         <script src="http://platform.twitter.com/widgets.js" async></script>
