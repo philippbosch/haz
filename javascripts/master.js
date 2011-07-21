@@ -29,7 +29,6 @@ $(document).ready(function() {
                 features += feat.name + ", ";
             });
         });
-        if (typeof(JSON) != 'undefined') $('#jdrop').show();
     });
     
     $('#useragent').html(useragentTemplate({'useragent': navigator.userAgent}));
