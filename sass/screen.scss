@@ -62,7 +62,7 @@ h1 {
     }
 }
 
-section {
+.group {
     width: 33.333%;
     @include float(left);
     @include box-sizing(border-box);
@@ -137,6 +137,7 @@ section {
         display: block;
         
         &:after {
+            text-align: center;
             width: 18px;
             height: 18px;
             display: block;
