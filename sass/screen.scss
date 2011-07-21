@@ -21,7 +21,7 @@ body {
 }
 
 a {
-    color: inherit;
+    color: $even-darker-green;
     text-decoration: none;
     
     &.spec {
@@ -62,11 +62,14 @@ h1 {
     }
 }
 
-section {
-    width: 33.333%;
+p.info {
+    text-align: center;
+}
+
+.group {
+    width: 30%;
     @include float(left);
-    @include box-sizing(border-box);
-    padding: 0 1em;
+    padding: 0 1.5%;
     margin-bottom: 2em;
     
     &:nth-child(4) {
@@ -137,6 +140,7 @@ section {
         display: block;
         
         &:after {
+            text-align: center;
             width: 18px;
             height: 18px;
             display: block;
