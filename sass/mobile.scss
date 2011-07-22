@@ -2,6 +2,7 @@
 
 body {
     padding: 24px 16px;
+    padding-top: 0;
 }
 
 h1 {
@@ -17,6 +18,7 @@ h1 {
     
     h1 {
         font-size: 24px;
+        margin-top: 1em;
     }
 }
 
@@ -31,12 +33,7 @@ h1 {
     }
     
     .support {
-        padding-right: 0.5em;
-        top: 0.5em;
-        margin-top: -2px;
-        
-        &:after {
-        }
+        right: 0;
     }
 }
 
