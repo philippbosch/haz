@@ -1,6 +1,7 @@
 {
     "sections": [
         {
+            "name": "css3",
             "title": "CSS3",
             "features": [
                 {
@@ -100,6 +101,7 @@
             ]
         },
         {
+            "name": "html5",
             "title": "HTML5",
             "features": [
                 {
@@ -212,131 +214,134 @@
             ]
         },
         {
+            "name": "inputtypes",
             "title": "Input Types",
             "features": [
                 {
-                    "name": "inputtypes-search",
+                    "name": "search",
                     "title": "search",
                     "specurl": "http://dev.w3.org/html5/spec/Overview.html#text-state-and-search-state"
                 },
                 {
-                    "name": "inputtypes-tel",
+                    "name": "tel",
                     "title": "tel",
                     "specurl": "http://dev.w3.org/html5/spec/Overview.html#telephone-state"
                 },
                 {
-                    "name": "inputtypes-url",
+                    "name": "url",
                     "title": "url",
                     "specurl": "http://dev.w3.org/html5/spec/Overview.html#url-state"
                 },
                 {
-                    "name": "inputtypes-email",
+                    "name": "email",
                     "title": "email",
                     "specurl": "http://dev.w3.org/html5/spec/Overview.html#e-mail-state"
                 },
                 {
-                    "name": "inputtypes-datetime",
+                    "name": "datetime",
                     "title": "datetime",
                     "specurl": "http://dev.w3.org/html5/spec/Overview.html#date-and-time-state"
                 },
                 {
-                    "name": "inputtypes-date",
+                    "name": "date",
                     "title": "date",
                     "specurl": "http://dev.w3.org/html5/spec/Overview.html#date-state"
                 },
                 {
-                    "name": "inputtypes-month",
+                    "name": "month",
                     "title": "month",
                     "specurl": "http://dev.w3.org/html5/spec/Overview.html#month-state"
                 },
                 {
-                    "name": "inputtypes-week",
+                    "name": "week",
                     "title": "week",
                     "specurl": "http://dev.w3.org/html5/spec/Overview.html#week-state"
                 },
                 {
-                    "name": "inputtypes-time",
+                    "name": "time",
                     "title": "time",
                     "specurl": "http://dev.w3.org/html5/spec/Overview.html#time-state"
                 },
                 {
-                    "name": "inputtypes-datetime-local",
+                    "name": "datetime-local",
                     "title": "datetime-local",
                     "specurl": "http://dev.w3.org/html5/spec/Overview.html#local-date-and-time-state"
                 },
                 {
-                    "name": "inputtypes-number",
+                    "name": "number",
                     "title": "number",
                     "specurl": "http://dev.w3.org/html5/spec/Overview.html#number-state"
                 },
                 {
-                    "name": "inputtypes-range",
+                    "name": "range",
                     "title": "range",
                     "specurl": "http://dev.w3.org/html5/spec/Overview.html#range-state"
                 },
                 {
-                    "name": "inputtypes-color",
+                    "name": "color",
                     "title": "color",
                     "specurl": "http://dev.w3.org/html5/spec/Overview.html#color-state"
                 }
             ]
         },
         {
+            "name": "input",
             "title": "Input Attributes",
             "features": [
                 {
-                    "name": "input-autocomplete",
+                    "name": "autocomplete",
                     "title": "autocomplete",
                     "specurl": "http://dev.w3.org/html5/spec/Overview.html#the-autocomplete-attribute"
                 },
                 {
-                    "name": "input-autofocus",
+                    "name": "autofocus",
                     "title": "autofocus",
                     "specurl": "http://dev.w3.org/html5/spec/Overview.html#attr-fe-autofocus"
                 },
                 {
-                    "name": "input-list",
+                    "name": "list",
                     "title": "list",
                     "specurl": "http://dev.w3.org/html5/spec/Overview.html#attr-input-list"
                 },
                 {
-                    "name": "input-placeholder",
+                    "name": "placeholder",
                     "title": "placeholder",
                     "specurl": "http://dev.w3.org/html5/spec/Overview.html#the-placeholder-attribute"
                 },
                 {
-                    "name": "input-max",
+                    "name": "max",
                     "title": "max",
                     "specurl": "http://dev.w3.org/html5/spec/Overview.html#the-min-and-max-attributes"
                 },
                 {
-                    "name": "input-min",
+                    "name": "min",
                     "title": "min",
                     "specurl": "http://dev.w3.org/html5/spec/Overview.html#the-min-and-max-attributes"
                 },
                 {
-                    "name": "input-multiple",
+                    "name": "multiple",
                     "title": "multiple",
                     "specurl": "http://dev.w3.org/html5/spec/Overview.html#the-multiple-attribute"
                 },
                 {
-                    "name": "input-pattern",
+                    "name": "pattern",
                     "title": "pattern",
                     "specurl": "http://dev.w3.org/html5/spec/Overview.html#the-pattern-attribute"
                 },
                 {
-                    "name": "input-required",
+                    "name": "required",
                     "title": "required",
                     "specurl": "http://dev.w3.org/html5/spec/Overview.html#the-required-attribute"
                 },
                 {
-                    "name": "input-step",
+                    "name": "step",
                     "title": "step",
                     "specurl": "http://dev.w3.org/html5/spec/Overview.html#the-step-attribute"
                 }
             ]
         },
         {
+            "name": "misc",
             "title": "Miscellaneous",
             "features": [
                 {

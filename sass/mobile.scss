@@ -10,8 +10,9 @@ h1 {
     margin-bottom: 0.5em;
 }
 
-section {
+.group {
     width: 100%;
+    padding: 0;
     @include float(none);
     
     h1 {

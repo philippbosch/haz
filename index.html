@@ -8,12 +8,19 @@
         <link href="/stylesheets/mobile.css?v=1.3.1" media="screen and (max-width: 768px)" rel="stylesheet" type="text/css" />
         <link href="/stylesheets/wide.css?v=1.3.1" media="screen and (min-width: 1400px)" rel="stylesheet" type="text/css" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--[if lt IE 9]>
+            <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
     </head>
     <body>
         <div id="wrapper">
             <header>
                 <h1>I can <span>haz</span> some ... ?</h1>
             </header>
+            <!--[if lt IE 7]>
+                <p class="info">Sorry, but haz.io does not support IE6 or lower.</p>
+            <![endif]-->
+            
             <div id="features"></div>
             <footer>
                 <div id="useragent"></div>
@@ -26,7 +33,7 @@
                 <div id="social">
                     <!-- twitter -->
                     <a href="http://twitter.com/haz_io" class="twitter-follow-button" data-button="blue" data-text-color="#FFFFFF" data-link-color="#FFFFFF" data-show-screen-name="false" data-show-count="false" data-width="61px">Follow @haz_io</a>
-                    <a href="http://twitter.com/share" class="twitter-share-button" data-count="compact" data-via="haz_io" data-width="80px">Tweet</a>
+                    <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://haz.io/" data-count="compact" data-via="haz_io" data-width="80px">Tweet</a>
                     
                     <!-- Google +1 -->
                     <g:plusone size="medium" count="true" href="http://haz.io/"></g:plusone>
@@ -43,25 +50,25 @@
         </div>
         <a href="http://github.com/philippbosch/haz" id="github-ribbon"><img src="https://d3nwyuy0nl342s.cloudfront.net/img/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>
         <script id="section-template" type="text/x-handlebars-template">
-            <section>
+            <div class="group">
                 <header>
                     <h1>{{title}}</h1>
                 </header>
                 <ul class="features">
                     {{#each features}}
-                        <li class="feature {{this.name}}">
+                        <li class="feature {{../name}}-{{name}}">
                             {{#if this.specurl}}
-                                <a href="{{this.specurl}}" class="title spec" title="Check the spec for {{this.title}}">{{this.title}}</a>
+                                <a href="{{specurl}}" class="title spec" title="Check the spec for {{title}}">{{title}}</a>
                             {{else}}
-                                <span class="title">{{this.title}}</span>
+                                <span class="title">{{title}}</span>
                             {{/if}}
-                            <span class="support"></span>
+                            <abbr class="support" title="unknown">?</abbr>
                             {{#if subfeatures}}
                                 <ul class="subfeatures">
                                     {{#each subfeatures}}
-                                        <li class="feature {{this.name}}">
-                                            <span class="title">{{this.title}}</span>
-                                            <span class="support"></span>
+                                        <li class="feature {{name}}">
+                                            <span class="title">{{title}}</span>
+                                            <abbr class="support" title="unknown">?</abbr>
                                         </li>
                                     {{/each}}
                                 </ul>
@@ -69,15 +76,17 @@
                         </li>
                     {{/each}}
                 </ul>
-            </section>
+            </div>
         </script>
         <script id="useragent-template" type="text/x-handlebars-template">
             <p>Your browser: «{{useragent}}»</p>
         </script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
         <script src="http://cloud.github.com/downloads/wycats/handlebars.js/handlebars.1.0.0.beta.3.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-        <script src="/javascripts/master.js?v=1.3.1"></script>
+        <script src="/javascripts/modernizr.js?v=2.0.6"></script>
+        <!--[if gte IE 7]><!-->
+            <script src="/javascripts/master.js?v=1.3.1"></script>
+        <!--<![endif]-->
         
         <!-- Badges -->
         <script src="http://platform.twitter.com/widgets.js" async></script>
