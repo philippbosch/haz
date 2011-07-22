@@ -46,7 +46,7 @@ $(document).ready(function() {
                 
                 if(feature.subfeatures) {
                     $(feature.subfeatures).each(function(i, subfeature) {
-                        var supported = Modernizr[feature.name][subfeature.name.substr(subfeature.name.indexOf('-')+1)],
+                        var supported = !!Modernizr[feature.name] && Modernizr[feature.name][subfeature.name.substr(subfeature.name.indexOf('-')+1)] || 'no',
                             $subfeature = $('.feature.' + subfeature.name);
                         setSupport($subfeature, supported);
                     });
