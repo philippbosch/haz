@@ -21,12 +21,36 @@ $(document).ready(function() {
         $('html').addClass((support===''?'no-':(support=='maybe'?'maybe-':''))+'audio-'+type);
     });
     
+    
+    function setSupport($feature, supported) {
+        if (supported == 'yes' || supported == 'probably') {
+            $feature.addClass('support-yes').find('> .support').text('Y').attr('title', 'yes');
+        } else if (supported == 'no' || supported === '') {
+            $feature.addClass('support-no').find('> .support').text('N').attr('title', 'no');
+        } else if (supported == 'maybe') {
+            $feature.addClass('support-maybe').find('> .support').text('M').attr('title', 'maybe');
+        }
+    }
     $.getJSON('capabilities.json?v=1.3.1', function(capabilities) {
         $(capabilities.sections).each(function(i, section) {
             $('#features').append(sectionTemplate(section));
-            
-            $(section.features).each(function(i, feat) {
-                features += feat.name + ", ";
+            $(section.features).each(function(i, feature) {
+                var supported,
+                    $feature = $('.feature.' + section.name + '-' + feature.name);
+                if (!(section.name in Modernizr)) {
+                    supported = !!Modernizr[feature.name] ? 'yes' : 'no';
+                } else {
+                    supported = !!Modernizr[section.name][feature.name] ? 'yes' : 'no';
+                }
+                setSupport($feature, supported);
+                
+                if(feature.subfeatures) {
+                    $(feature.subfeatures).each(function(i, subfeature) {
+                        var supported = Modernizr[feature.name][subfeature.name.substr(subfeature.name.indexOf('-')+1)],
+                            $subfeature = $('.feature.' + subfeature.name);
+                        setSupport($subfeature, supported);
+                    });
+                }
             });
         });
     });
