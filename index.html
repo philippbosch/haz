@@ -56,19 +56,19 @@
                 </header>
                 <ul class="features">
                     {{#each features}}
-                        <li class="feature {{this.name}}">
+                        <li class="feature {{../name}}-{{name}}">
                             {{#if this.specurl}}
-                                <a href="{{this.specurl}}" class="title spec" title="Check the spec for {{this.title}}">{{this.title}}</a>
+                                <a href="{{specurl}}" class="title spec" title="Check the spec for {{title}}">{{title}}</a>
                             {{else}}
-                                <span class="title">{{this.title}}</span>
+                                <span class="title">{{title}}</span>
                             {{/if}}
-                            <span class="support"></span>
+                            <abbr class="support" title="unknown">?</abbr>
                             {{#if subfeatures}}
                                 <ul class="subfeatures">
                                     {{#each subfeatures}}
-                                        <li class="feature {{this.name}}">
-                                            <span class="title">{{this.title}}</span>
-                                            <span class="support"></span>
+                                        <li class="feature {{name}}">
+                                            <span class="title">{{title}}</span>
+                                            <abbr class="support" title="unknown">?</abbr>
                                         </li>
                                     {{/each}}
                                 </ul>

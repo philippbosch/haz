@@ -7,7 +7,7 @@ $even-lighter-green: mix($green, #FFF, 30%);
 $dark-green: mix($green, #000, 70%);
 $even-darker-green: mix($green, #000);
 $red: #C00;
-$yellow: #CC0;
+$yellow: #DD0;
 $white-kinda: #FEFFEB;
 //$noise: url("http://noisepng.com/64-90-4.png");
 $noise: image-url("noise.png");
@@ -108,6 +108,7 @@ p.info {
     
     li {
         padding: 0 1em;
+        position: relative;
         border-bottom: 1px dotted $light-green;
         @include text-shadow(
             $white-kinda 0 1px,
@@ -131,30 +132,35 @@ p.info {
     .support {
         text-align: center;
         color: #FFF;
-        padding-right: 1em;
-        padding-left: 0.3em;
+        margin-right: 1em;
         position: absolute;
-        top: 0.5em;
+        top: 0.7em;
+        right: 0.4em;
         margin-top: -2px;
-        right: 0;
         display: block;
-        
-        &:after {
-            text-align: center;
-            width: 18px;
-            height: 18px;
-            display: block;
-            content: "N";
-            font-size: 12px;
-            line-height: 18px;
-            font-weight: bold;
-            @include background(linear-gradient(top, rgba(255,255,255,0.3), rgba(255,255,255,0)));
-            background-color: $red;
-            border: 1px solid rgba(0,0,0,0.1);
-            @include border-radius(9px);
-            @include text-shadow(rgba(0,0,0,0.3) 0 -1px);
-            @include box-shadow(rgba(255,255,255,0.6) 0 1px 1px inset, rgba(0,0,0,0.15) 0 -1px 1px inset);
-        }
+        width: 18px;
+        height: 18px;
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: bold;
+        @include background(linear-gradient(top, rgba(255,255,255,0.3), rgba(255,255,255,0)));
+        background-color: #AAA;
+        border: 1px solid rgba(0,0,0,0.1);
+        @include border-radius(9px);
+        @include text-shadow(rgba(0,0,0,0.3) 0 -1px);
+        @include box-shadow(rgba(255,255,255,0.6) 0 1px 1px inset, rgba(0,0,0,0.15) 0 -1px 1px inset);
+    }
+    
+    .support-yes > .support {
+        background-color: $green;
+    }
+    
+    .support-no > .support {
+        background-color: $red;
+    }
+    
+    .support-maybe > .support {
+        background-color: $yellow;
     }
 }
 
@@ -167,29 +173,11 @@ p.info {
         padding-right: 0;
         
         .support {
-            padding-right: 0;
+            top: 0.5em;
+            right: 0;
+            margin-right: 0;
         }
     }
-}
-
-$yesSelector: "";
-$noSelector: "";
-$maybeSelector: "";
-@each $feature in /* FEATURES START */fontface, backgroundsize, borderimage, borderradius, boxshadow, flexbox, generatedcontent, hsla, multiplebgs, opacity, rgba, textshadow, cssanimations, csscolumns, cssgradients, cssreflections, csstransforms, csstransforms3d, csstransitions, applicationcache, canvas, canvastext, draganddrop, hashchange, history, audio, audio-mp3, audio-wav, audio-m4a, audio-ogg, video, video-h264, video-ogg, video-webm, indexeddb, localstorage, postmessage, sessionstorage, websockets, websqldatabase, webworkers, inputtypes-search, inputtypes-tel, inputtypes-url, inputtypes-email, inputtypes-datetime, inputtypes-date, inputtypes-month, inputtypes-week, inputtypes-time, inputtypes-datetime-local, inputtypes-number, inputtypes-range, inputtypes-color, input-autocomplete, input-autofocus, input-list, input-placeholder, input-max, input-min, input-multiple, input-pattern, input-required, input-step, geolocation, inlinesvg, smil, svg, svgclippaths, touch, webgl/* FEATURES END */ {
-
-    $yesSelector: "#{$yesSelector} html.#{$feature} .feature.#{$feature} > .support:after,";
-    $noSelector: "#{$noSelector} html.no-#{$feature} .feature.#{$feature} > .support:after,";
-    $maybeSelector: "#{$maybeSelector} html.maybe-#{$feature} .feature.#{$feature} > .support:after,";
-}
-
-#{$yesSelector} {
-    background-color: $green;
-    content: "Y";
-}
-
-#{$maybeSelector} {
-    background-color: $yellow;
-    content: "M";
 }
 
 footer {
@@ -217,9 +205,4 @@ footer {
     top: 0;
     right: 0;
     border: 0;
-}
-
-#jdrop {
-    display: none;
-    margin-bottom: 1em;
 }
