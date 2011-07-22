@@ -13,11 +13,12 @@ $white-kinda: #FEFFEB;
 $noise: image-url("noise.png");
 
 body {
-    background-image: $noise;
+    background-image: image-url("bg.png");
     background-color: $green;
     color: $white-kinda;
     font-family: "Droid Sans", sans-serif;
     padding: 48px;
+    padding-top: 0;
 }
 
 a {
@@ -49,9 +50,11 @@ a {
     }
 }
 
+#logo {
+}
+
 h1 {
     font-size: 48px;
-    font-weight: bold;
     letter-spacing: -3px;
     color: $dark-green;
     @include text-shadow(rgba(255,255,255,0.4) 1px 1px, rgba(0,0,0,0.4) -1px -1px, rgba(255,255,255,0.5) 0 0 15px);
