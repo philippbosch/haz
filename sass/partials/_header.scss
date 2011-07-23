@@ -1,0 +1,23 @@
+#header {
+    width: 680px;
+    margin: 0 auto;
+    @include clearfix;
+    
+    h1 {
+        text-align: left;
+        width: 230px;
+        height: 200px;
+        float: left;
+    }
+    
+    p {
+        text-align: left;
+        margin-top: 84px;
+        @include text-shadow(rgba(0,0,0,0.3) 0 1px);
+        line-height: 1.4;
+        
+        a {
+            @include text-shadow(rgba(255,255,255,0.7) 0 1px);
+        }
+    }
+}

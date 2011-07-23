@@ -14,73 +14,73 @@
     </head>
     <body>
         <div id="wrapper">
-            <header>
-                <h1><img src="/images/logo.png" alt="haz.io" id="logo" />
-                </h1>
+            <header id="header">
+                <h1><img src="/images/logo.png" alt="haz.io" id="logo" /></h1>
+                <p>With the help of the awesome <a href="http://www.modernizr.com/">Modernizr</a> library, haz.io gives you a quick overview about your browser’s support for recent technologies in the world of HTML, CSS and Javascript.</p>
             </header>
             <!--[if lt IE 7]>
                 <p class="info">Sorry, but haz.io does not support IE6 or lower.</p>
             <![endif]-->
             
             <div id="features"></div>
-            <footer>
-                <div id="useragent"></div>
-                <p>
-                    Created by <a href="http://pb.io/">Philipp Bosch</a>. 
-                    Background <a href="http://pb.io/2011/07/08/haz-io/">here</a>. 
-                    Powered by <a href="http://modernizr.com/">Modernizr 2</a>.
-                </p>
-                
-                <div id="social">
-                    <!-- twitter -->
-                    <a href="http://twitter.com/haz_io" class="twitter-follow-button" data-button="blue" data-text-color="#FFFFFF" data-link-color="#FFFFFF" data-show-screen-name="false" data-show-count="false" data-width="61px">Follow @haz_io</a>
-                    <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://haz.io/" data-count="compact" data-via="haz_io" data-width="80px">Tweet</a>
-                    
-                    <!-- Google +1 -->
-                    <g:plusone size="medium" count="true" href="http://haz.io/"></g:plusone>
-                    
-                    <!-- Facebook -->
-                    <span id="fb-root"></span><fb:like href="http://haz.io/" send="false" width="49" height="20" show_faces="false" font="" layout="button_count" style="position: relative; top: -3px;"></fb:like>
-                    
-                    <!-- Flattr -->
-                    <a class="FlattrButton" style="display:none;" rel="flattr;button:compact;" href="http://haz.io/"></a>
-                    <noscript><a href="http://flattr.com/thing/347013/haz-io-HTML5-CSS3-Browser-Capabilities-Chart" target="_blank">
-                    <img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" /></a></noscript>
-                </div>
-            </footer>
         </div>
+        <footer>
+            <div id="useragent"></div>
+            <p>
+                Created by <a href="http://pb.io/">Philipp Bosch</a>. 
+                Background <a href="http://pb.io/2011/07/08/haz-io/">here</a>. 
+                Powered by <a href="http://modernizr.com/">Modernizr 2</a>.
+            </p>
+            
+            <div id="social">
+                <!-- twitter -->
+                <a href="http://twitter.com/haz_io" class="twitter-follow-button" data-button="blue" data-text-color="#FFFFFF" data-link-color="#FFFFFF" data-show-screen-name="false" data-show-count="false" data-width="61px">Follow @haz_io</a>
+                <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://haz.io/" data-count="compact" data-via="haz_io" data-width="80px">Tweet</a>
+                
+                <!-- Google +1 -->
+                <g:plusone size="medium" count="true" href="http://haz.io/"></g:plusone>
+                
+                <!-- Facebook -->
+                <span id="fb-root"></span><fb:like href="http://haz.io/" send="false" width="49" height="20" show_faces="false" font="" layout="button_count" style="position: relative; top: -3px;"></fb:like>
+                
+                <!-- Flattr -->
+                <a class="FlattrButton" style="display:none;" rel="flattr;button:compact;" href="http://haz.io/"></a>
+                <noscript><a href="http://flattr.com/thing/347013/haz-io-HTML5-CSS3-Browser-Capabilities-Chart" target="_blank">
+                <img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" /></a></noscript>
+            </div>
+        </footer>
         <a href="http://github.com/philippbosch/haz" id="github-ribbon"><img src="https://d3nwyuy0nl342s.cloudfront.net/img/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>
         <script id="section-template" type="text/x-handlebars-template">
             <div class="group">
-                <header>
+                <div class="features">
                     <h1>{{title}}</h1>
-                </header>
-                <ul class="features">
-                    {{#each features}}
-                        <li class="feature {{../name}}-{{name}}">
-                            {{#if this.specurl}}
-                                <a href="{{specurl}}" class="title spec" title="Check the spec for {{title}}">{{title}}</a>
-                            {{else}}
-                                <span class="title">{{title}}</span>
-                            {{/if}}
-                            <abbr class="support" title="unknown">?</abbr>
-                            {{#if subfeatures}}
-                                <ul class="subfeatures">
-                                    {{#each subfeatures}}
-                                        <li class="feature {{name}}">
-                                            <span class="title">{{title}}</span>
-                                            <abbr class="support" title="unknown">?</abbr>
-                                        </li>
-                                    {{/each}}
-                                </ul>
-                            {{/if}}
-                        </li>
-                    {{/each}}
-                </ul>
+                    <ul>
+                        {{#each features}}
+                            <li class="feature {{../name}}-{{name}}">
+                                {{#if this.specurl}}
+                                    <a href="{{specurl}}" class="title spec" title="Check the spec for {{title}}">{{title}}</a>
+                                {{else}}
+                                    <span class="title">{{title}}</span>
+                                {{/if}}
+                                <abbr class="support" title="unknown">?</abbr>
+                                {{#if subfeatures}}
+                                    <ul class="subfeatures">
+                                        {{#each subfeatures}}
+                                            <li class="feature {{name}}">
+                                                <span class="title">{{title}}</span>
+                                                <spap class="support">?</abbr>
+                                            </li>
+                                        {{/each}}
+                                    </ul>
+                                {{/if}}
+                            </li>
+                        {{/each}}
+                    </ul>
+                </div>
             </div>
         </script>
         <script id="useragent-template" type="text/x-handlebars-template">
-            <p>Your browser: «{{useragent}}»</p>
+            <p>You are using {{useragent}}.</p>
         </script>
         <script src="http://cloud.github.com/downloads/wycats/handlebars.js/handlebars.1.0.0.beta.3.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>

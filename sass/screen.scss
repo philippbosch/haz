@@ -1,20 +1,21 @@
 @import "compass/reset";
 @import "compass";
 
-$green: #8bd71f;
+$green: #78b814;
 $light-green: mix($green, #FFF);
 $even-lighter-green: mix($green, #FFF, 30%);
 $dark-green: mix($green, #000, 70%);
 $even-darker-green: mix($green, #000);
-$red: #C00;
-$yellow: #DD0;
-$white-kinda: #FEFFEB;
+$red: #b83314;
+$yellow: #cfd12b;
+$white-kinda: #FFF;
 //$noise: url("http://noisepng.com/64-90-4.png");
 $noise: image-url("noise.png");
 
 body {
     background-image: image-url("bg.png");
     background-color: $green;
+    background-position: top center;
     color: $white-kinda;
     font-family: "Droid Sans", sans-serif;
     padding: 48px;
@@ -28,14 +29,13 @@ a {
     &.spec {
         &:after {
             content: " ›";
-            color: #CCC;
+            color: rgba(#88875F, 0.5);
             text-transform: uppercase;
             font-size: 75%;
             @include text-shadow(none);
         }
         
         &:hover:after {
-            color: #999;
             content: "   Spec ›";
         }
     }
@@ -50,20 +50,7 @@ a {
     }
 }
 
-#logo {
-}
-
-h1 {
-    font-size: 48px;
-    letter-spacing: -3px;
-    color: $dark-green;
-    @include text-shadow(rgba(255,255,255,0.4) 1px 1px, rgba(0,0,0,0.4) -1px -1px, rgba(255,255,255,0.5) 0 0 15px);
-    margin-bottom: 1em;
-    
-    span {
-        color: $even-darker-green;
-    }
-}
+@import "partials/header";
 
 p.info {
     text-align: center;
@@ -80,43 +67,32 @@ p.info {
     }
     
     h1 {
+        margin: 0 -5px;
+        padding: 32px 0 16px 0;
         text-align: center;
-        font-size: 32px;
+        font-size: 24px;
         font-weight: bold;
-        color: $white-kinda;
-        @include text-shadow(rgba(0,0,0,0.3) 0 1px, rgba(255,255,255,0.5) 0 0 15px);
-        margin-bottom: 0;
-        
-        &:before, &:after {
-            color: mix(#FFF, $green);
-        }
-        
-        &:before {
-            content: "‹ ";
-        }
-        
-        &:after {
-            content: " ›";
-        }
+        color: rgba(#88875F, 0.7);
+        letter-spacing: -2px;
+        @include background(image-url("stitch.png") center 8px repeat-x);
+        @include text-shadow(rgba(255,255,255,0.7) 0 1px, rgba(0,0,0,0.2) 0 -1px);
     }
 }
 
 .features {
     width: 100%;
     margin-top: 1em;
-    background: $white-kinda $noise;
-    @include border-radius(8px);
+    padding-bottom: 0.5em;
+    background: #E7E6CF image-url("fabric.png");
+    @include border-radius(3px);
     @include box-shadow(rgba(0,0,0,0.5) 0 1px 2px);
-    color: $even-darker-green;
+    
+    &, a {
+        color: #88875F;
+    }
     
     li {
-        padding: 0 1em;
-        position: relative;
-        border-bottom: 1px dotted $light-green;
-        @include text-shadow(
-            $white-kinda 0 1px,
-            rgba(0,0,0,0.15) 0 2px
-        );
+        margin: 0 1em;
         position: relative;
         
         &:last-child {
@@ -133,37 +109,34 @@ p.info {
     }
     
     .support {
-        text-align: center;
+        text-align: right;
         color: #FFF;
-        margin-right: 1em;
+        color: rgba(255,255,255,0.8);
         position: absolute;
-        top: 0.7em;
+        top: 0.5em;
         right: 0.4em;
-        margin-top: -2px;
         display: block;
-        width: 18px;
-        height: 18px;
+        padding: 4px 6px;
+        @include border-radius(12px);
+        text-transform: uppercase;
         font-size: 12px;
-        line-height: 18px;
         font-weight: bold;
-        @include background(linear-gradient(top, rgba(255,255,255,0.3), rgba(255,255,255,0)));
-        background-color: #AAA;
-        border: 1px solid rgba(0,0,0,0.1);
-        @include border-radius(9px);
-        @include text-shadow(rgba(0,0,0,0.3) 0 -1px);
-        @include box-shadow(rgba(255,255,255,0.6) 0 1px 1px inset, rgba(0,0,0,0.15) 0 -1px 1px inset);
+        @include box-shadow(rgba(0,0,0,0.2) 0 1px inset, rgba(255,255,255,0.8) 0 -1px inset);
     }
     
     .support-yes > .support {
         background-color: $green;
+        background-color: rgba($green,0.9);
     }
     
     .support-no > .support {
         background-color: $red;
+        background-color: rgba($red,0.9);
     }
     
     .support-maybe > .support {
         background-color: $yellow;
+        background-color: rgba($yellow,0.9);
     }
 }
 
@@ -177,17 +150,20 @@ p.info {
         
         .support {
             top: 0.5em;
-            right: 0;
+            right: -0.6em;
             margin-right: 0;
         }
     }
 }
 
 footer {
+    @include background(image-url("double-stitch.png") top center repeat-x);
     font-size: 12px;
     clear: both;
     text-align: center;
     line-height: 1.4;
+    padding-top: 48px;
+    margin: 16px -48px 0 -48px;
     
     a {
         color: $dark-green;
