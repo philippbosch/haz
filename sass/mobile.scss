@@ -5,36 +5,39 @@ body {
     padding-top: 0;
 }
 
-h1 {
-    font-size: 30px;
-    letter-spacing: -2px;
-    margin-bottom: 0.5em;
+#header {
+    width: 100%;
+    
+    h1 {
+        height: 135px;
+        @include float(none);
+    }
+    
+    p {
+        margin-top: 24px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
 }
 
 .group {
     width: 100%;
     padding: 0;
     @include float(none);
-    
-    h1 {
-        font-size: 24px;
-        margin-top: 1em;
-    }
 }
 
 .features {
     li {
-        padding: 0 0.5em;
-        
         .title {
             padding-top: 0.5em;
             padding-bottom: 0.5em;
         }
     }
-    
-    .support {
-        right: 0;
-    }
+}
+
+footer {
+    margin-left: -16px;
+    margin-right: -16px;
 }
 
 #github-ribbon {

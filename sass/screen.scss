@@ -113,8 +113,8 @@ p.info {
         color: #FFF;
         color: rgba(255,255,255,0.8);
         position: absolute;
-        top: 0.5em;
-        right: 0.4em;
+        top: 0.6em;
+        right: 0;
         display: block;
         padding: 4px 6px;
         @include border-radius(12px);
@@ -146,12 +146,10 @@ p.info {
     li {
         font-size: 80%;
         border: 0;
-        padding-right: 0;
+        margin-right: 0;
         
         .support {
             top: 0.5em;
-            right: -0.6em;
-            margin-right: 0;
         }
     }
 }
