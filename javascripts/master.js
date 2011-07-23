@@ -31,7 +31,7 @@ $(document).ready(function() {
             $feature.addClass('support-maybe').find('> .support').text('maybe');
         }
     }
-    $.getJSON('capabilities.json?v=1.4', function(capabilities) {
+    $.getJSON('capabilities.json?v=2.0', function(capabilities) {
         $(capabilities.sections).each(function(i, section) {
             $('#features').append(sectionTemplate(section));
             $(section.features).each(function(i, feature) {
