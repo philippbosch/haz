@@ -43,3 +43,24 @@ footer {
 #github-ribbon {
     display: none;
 }
+
+
+@media 
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2) {
+    
+    #header {
+        h1 {
+            width: 193px;
+            height: 134px;
+            display: block;
+            margin: 0 auto;
+            background: image-url("logo-retina.png");
+            background-size: 100%;
+            
+            img {
+                display: none;
+            }
+        }
+    }
+}
