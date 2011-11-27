@@ -1,0 +1,23 @@
+# WestOst App
+
+PROJECT_NAME = "haz"
+
+setup do
+  run "bundle install"
+end
+
+before do
+  run "cd ~/Sites/#{PROJECT_NAME}"
+end
+
+tab "#{PROJECT_NAME}" do
+  pane do
+    run "foreman start"
+    
+    pane do
+      run "mate ."
+      run "open http://localhost:8022/"
+      run "clear && ls -alG"
+    end
+  end
+end
