@@ -10,8 +10,23 @@
                     "specurl": "http://dev.w3.org/csswg/css3-fonts/"
                 },
                 {
+                    "name": "bgrepeatround",
+                    "title": "background-repeat: round",
+                    "specurl": ""
+                },
+                {
+                    "name": "bgrepeatspace",
+                    "title": "background-repeat: space",
+                    "specurl": ""
+                },
+                {
                     "name": "backgroundsize",
                     "title": "background-size",
+                    "specurl": "http://dev.w3.org/csswg/css3-background/#the-background-size"
+                },
+                {
+                    "name": "bgsizecover",
+                    "title": "background-size: cover",
                     "specurl": "http://dev.w3.org/csswg/css3-background/#the-background-size"
                 },
                 {
@@ -30,6 +45,21 @@
                     "specurl": "http://dev.w3.org/csswg/css3-background/#the-box-shadow"
                 },
                 {
+                    "name": "boxsizing",
+                    "title": "box-sizing",
+                    "specurl": ""
+                },
+                {
+                    "name": "cubicbezierrange",
+                    "title": "cubic-bezier values > 1",
+                    "specurl": "https://bugs.webkit.org/show_bug.cgi?id=45761"
+                },
+                {
+                    "name": "display-table",
+                    "title": "display: table",
+                    "specurl": ""
+                },
+                {
                     "name": "flexbox",
                     "title": "Flexible Box Model",
                     "specurl": "http://dev.w3.org/csswg/css3-flexbox/"
@@ -45,6 +75,11 @@
                     "specurl": "http://dev.w3.org/csswg/css3-color/#hsla-color"
                 },
                 {
+                    "name": "csshyphens",
+                    "title": "Hyphenation",
+                    "specurl": ""
+                },
+                {
                     "name": "multiplebgs",
                     "title": "Multiple backgrounds",
                     "specurl": "http://dev.w3.org/csswg/css3-background/#layering"
@@ -55,6 +90,16 @@
                     "specurl": "http://dev.w3.org/csswg/css3-color/#transparency"
                 },
                 {
+                    "name": "overflowscrolling",
+                    "title": "overflow-scrolling",
+                    "specurl": ""
+                },
+                {
+                    "name": "pointerevents",
+                    "title": "pointer-events",
+                    "specurl": "developer.mozilla.org/en/CSS/pointer-events"
+                },
+                {
                     "name": "rgba",
                     "title": "rgba()",
                     "specurl": "http://dev.w3.org/csswg/css3-color/#rgba-color"
@@ -63,6 +108,11 @@
                     "name": "textshadow",
                     "title": "text-shadow",
                     "specurl": "http://dev.w3.org/csswg/css3-text/#text-shadow"
+                },
+                {
+                    "name": "userselect",
+                    "title": "user-select",
+                    "specurl": ""
                 },
                 {
                     "name": "cssanimations",
@@ -120,9 +170,29 @@
                     "specurl": "http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#text-0"
                 },
                 {
+                    "name": "details",
+                    "title": "<details>",
+                    "specurl": ""
+                },
+                {
+                    "name": "devicemotion",
+                    "title": "Device Motion Event",
+                    "specurl": "http://dev.w3.org/geo/api/spec-source-orientation.html"
+                },
+                {
+                    "name": "deviceorientation",
+                    "title": "Device Orientation Event",
+                    "specurl": "http://dev.w3.org/geo/api/spec-source-orientation.html"
+                },
+                {
                     "name": "draganddrop",
                     "title": "Drag and Drop",
                     "specurl": "http://www.whatwg.org/specs/web-apps/current-work/multipage/dnd.html"
+                },
+                {
+                    "name": "file",
+                    "title": "File API",
+                    "specurl": "http://dev.w3.org/2006/webapi/FileAPI/"
                 },
                 {
                     "name": "hashchange",
@@ -187,14 +257,29 @@
                     "specurl": "http://dev.w3.org/html5/webstorage/#the-localstorage-attribute"
                 },
                 {
+                    "name": "meter",
+                    "title": "<meter>",
+                    "specurl": ""
+                },
+                {
                     "name": "postmessage",
                     "title": "Cross-window Messaging",
                     "specurl": "http://www.whatwg.org/specs/web-apps/current-work/multipage/comms.html#web-messaging"
                 },
                 {
+                    "name": "progressbar",
+                    "title": "<progress>",
+                    "specurl": ""
+                },
+                {
                     "name": "sessionstorage",
                     "title": "sessionStorage",
                     "specurl": "http://dev.w3.org/html5/webstorage/#the-sessionstorage-attribute"
+                },
+                {
+                    "name": "sharedworkers",
+                    "title": "Shared Workers",
+                    "specurl": "http://dev.w3.org/html5/workers/#shared-workers-introduction"
                 },
                 {
                     "name": "websockets",
@@ -345,6 +430,31 @@
             "title": "Miscellaneous",
             "features": [
                 {
+                    "name": "cookies",
+                    "title": "Cookies",
+                    "specurl": ""
+                },
+                {
+                    "name": "customprotocolhandler",
+                    "title": "Custom Protocol Handlers",
+                    "specurl": ""
+                },
+                {
+                    "name": "datauri",
+                    "title": "data URIs",
+                    "specurl": ""
+                },
+                {
+                    "name": "emoji",
+                    "title": "Emoji",
+                    "specurl": "http://en.wikipedia.org/wiki/Emoji"
+                },
+                {
+                    "name": "fullscreen",
+                    "title": "Fullscreen API",
+                    "specurl": "https://developer.mozilla.org/en/API/Fullscreen"
+                },
+                {
                     "name": "geolocation",
                     "title": "Geolocation API",
                     "specurl": "http://dev.w3.org/geo/api/spec-source.html"
@@ -378,6 +488,11 @@
                     "name": "webgl",
                     "title": "WebGL",
                     "specurl": "http://www.khronos.org/registry/webgl/specs/latest/"
+                },
+                {
+                    "name": "webp",
+                    "title": "WebP",
+                    "specurl": "http://code.google.com/speed/webp/"
                 }
             ]
         }
