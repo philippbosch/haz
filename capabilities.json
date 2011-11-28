@@ -12,12 +12,12 @@
                 {
                     "name": "bgrepeatround",
                     "title": "background-repeat: round",
-                    "specurl": ""
+                    "specurl": "http://www.w3.org/TR/css3-background/#the-background-repeat"
                 },
                 {
                     "name": "bgrepeatspace",
                     "title": "background-repeat: space",
-                    "specurl": ""
+                    "specurl": "http://www.w3.org/TR/css3-background/#the-background-repeat"
                 },
                 {
                     "name": "backgroundsize",
