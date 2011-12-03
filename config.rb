@@ -8,3 +8,4 @@ javascripts_dir = "javascripts"
 
 output_style = :compressed
 line_comments = false
+relative_assets = true
