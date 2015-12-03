@@ -12,12 +12,12 @@
                 {
                     "name": "bgrepeatround",
                     "title": "background-repeat: round",
-                    "specurl": ""
+                    "specurl": "http://www.w3.org/TR/css3-background/#the-background-repeat"
                 },
                 {
                     "name": "bgrepeatspace",
                     "title": "background-repeat: space",
-                    "specurl": ""
+                    "specurl": "http://www.w3.org/TR/css3-background/#the-background-repeat"
                 },
                 {
                     "name": "backgroundsize",
@@ -47,7 +47,7 @@
                 {
                     "name": "boxsizing",
                     "title": "box-sizing",
-                    "specurl": ""
+                    "specurl": "http://www.w3.org/TR/css3-ui/#box-sizing"
                 },
                 {
                     "name": "cubicbezierrange",
@@ -57,7 +57,7 @@
                 {
                     "name": "display-table",
                     "title": "display: table",
-                    "specurl": ""
+                    "specurl": "http://www.w3.org/TR/CSS2/visuren.html#propdef-display"
                 },
                 {
                     "name": "flexbox",
@@ -77,7 +77,7 @@
                 {
                     "name": "csshyphens",
                     "title": "Hyphenation",
-                    "specurl": ""
+                    "specurl": "http://www.w3.org/TR/css3-text/#hyphenation"
                 },
                 {
                     "name": "multiplebgs",
@@ -112,7 +112,7 @@
                 {
                     "name": "userselect",
                     "title": "user-select",
-                    "specurl": ""
+                    "specurl": "http://www.w3.org/TR/2000/WD-css3-userint-20000216#user-select"
                 },
                 {
                     "name": "cssanimations",
@@ -172,7 +172,7 @@
                 {
                     "name": "details",
                     "title": "<details>",
-                    "specurl": ""
+                    "specurl": "http://www.w3.org/TR/html5/interactive-elements.html#the-details-element"
                 },
                 {
                     "name": "devicemotion",
@@ -259,7 +259,7 @@
                 {
                     "name": "meter",
                     "title": "<meter>",
-                    "specurl": ""
+                    "specurl": "http://dev.w3.org/html5/spec-author-view/the-meter-element.html"
                 },
                 {
                     "name": "postmessage",
@@ -269,7 +269,7 @@
                 {
                     "name": "progressbar",
                     "title": "<progress>",
-                    "specurl": ""
+                    "specurl": "http://dev.w3.org/html5/spec-author-view/the-progress-element.html"
                 },
                 {
                     "name": "sessionstorage",
@@ -437,12 +437,12 @@
                 {
                     "name": "customprotocolhandler",
                     "title": "Custom Protocol Handlers",
-                    "specurl": ""
+                    "specurl": "http://www.whatwg.org/specs/web-apps/current-work/#custom-handlers"
                 },
                 {
                     "name": "datauri",
                     "title": "data URIs",
-                    "specurl": ""
+                    "specurl": "http://www.ietf.org/rfc/rfc2397"
                 },
                 {
                     "name": "emoji",
