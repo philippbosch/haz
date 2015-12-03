@@ -136,6 +136,12 @@ $(document).ready(function() {
             },
             {
                 string: navigator.userAgent,
+                subString: "Trident",
+                identity: "Explorer",
+                versionSearch: "rv"
+            },
+            {
+                string: navigator.userAgent,
                 subString: "Gecko",
                 identity: "Mozilla",
                 versionSearch: "rv"
