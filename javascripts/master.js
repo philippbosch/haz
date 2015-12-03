@@ -31,26 +31,28 @@ $(document).ready(function() {
             $feature.addClass('support-maybe').find('> .support').text('maybe');
         }
     }
-    $.getJSON('capabilities.json?v=2.1', function(capabilities) {
+    $.getJSON('capabilities.json?v=2.3', function(capabilities) {
         $(capabilities.sections).each(function(i, section) {
             $('#features').append(sectionTemplate(section));
             $(section.features).each(function(i, feature) {
-                var supported,
-                    $feature = $('.feature.' + section.name + '-' + feature.name);
-                if (!(section.name in Modernizr)) {
-                    supported = !!Modernizr[feature.name] ? 'yes' : 'no';
-                } else {
-                    supported = !!Modernizr[section.name][feature.name] ? 'yes' : 'no';
-                }
-                setSupport($feature, supported);
-                
-                if(feature.subfeatures) {
-                    $(feature.subfeatures).each(function(i, subfeature) {
-                        var supported = !!Modernizr[feature.name] && Modernizr[feature.name][subfeature.name.substr(subfeature.name.indexOf('-')+1)] || 'no',
-                            $subfeature = $('.feature.' + subfeature.name);
-                        setSupport($subfeature, supported);
-                    });
-                }
+                window.setTimeout(function() {
+                    var supported,
+                        $feature = $('.feature.' + section.name + '-' + feature.name);
+                    if (!(section.name in Modernizr)) {
+                        supported = !!Modernizr[feature.name] ? 'yes' : 'no';
+                    } else {
+                        supported = !!Modernizr[section.name][feature.name] ? 'yes' : 'no';
+                    }
+                    setSupport($feature, supported);
+                    
+                    if(feature.subfeatures) {
+                        $(feature.subfeatures).each(function(i, subfeature) {
+                            var supported = !!Modernizr[feature.name] && Modernizr[feature.name][subfeature.name.substr(subfeature.name.indexOf('-')+1)] || 'no',
+                                $subfeature = $('.feature.' + subfeature.name);
+                            setSupport($subfeature, supported);
+                        });
+                    }
+                }, 1);
             });
         });
     });
